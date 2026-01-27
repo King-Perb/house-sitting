@@ -2,9 +2,9 @@
 
 ## Current Status
 
-**Project Phase:** Phase 01 - Project Setup & Foundation
+**Project Phase:** Phase 02 - Core UI Components & Layout
 **Last Updated:** 2026-01-27
-**Next Step:** Execute Phase 01 Plan 01 (Project Initialization)
+**Next Step:** Execute Phase 02 Plan (Core UI Components)
 
 ## Project Context
 
@@ -23,6 +23,15 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
 - ✅ SEO strategy defined for Gran Canaria
 - ✅ Payment integration approach decided (Calendly native)
 - ✅ GSD project structure initialized
+
+## Completed Phases
+
+- ✅ **Phase 01: Project Setup & Foundation** (2026-01-27)
+  - Next.js 16 with TypeScript configured
+  - Tailwind CSS v4 working
+  - shadcn/ui initialized with Button component
+  - ESLint configured
+  - See: `.planning/phases/01-project-setup/01-SUMMARY.md`
 
 ## Key Decisions Made
 
