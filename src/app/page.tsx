@@ -9,10 +9,24 @@ import {
   ServicesSection,
   TestimonialsSection,
 } from "@/components/sections";
+import { JsonLd } from "@/components/seo";
+import { generateServicesSchema, generateBreadcrumbSchema } from "@/lib/schema";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://housepetsitter.com";
+
+// Page-specific schemas
+const servicesSchema = generateServicesSchema();
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: SITE_URL },
+]);
 
 export default function Home() {
   return (
     <>
+      {/* Page-specific structured data */}
+      <JsonLd data={servicesSchema} />
+      <JsonLd data={breadcrumbSchema} />
+
       {/* Hero Section */}
       <HeroSection />
 
