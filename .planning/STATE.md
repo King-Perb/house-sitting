@@ -2,9 +2,9 @@
 
 ## Current Status
 
-**Project Phase:** Phase 02 - Core UI Components & Layout
+**Project Phase:** Phase 03 - Hero Section
 **Last Updated:** 2026-01-27
-**Next Step:** Execute Phase 02 Plan (Core UI Components)
+**Next Step:** Execute Phase 03 Plan (Hero Section)
 
 ## Project Context
 
@@ -32,6 +32,14 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
   - shadcn/ui initialized with Button component
   - ESLint configured
   - See: `.planning/phases/01-project-setup/01-SUMMARY.md`
+
+- ✅ **Phase 02: Core UI Components & Layout** (2026-01-27)
+  - Header with responsive navigation
+  - MobileNav with Sheet slide-out menu
+  - Footer with three-column layout
+  - Layout wrapper component
+  - Card and Sheet components from shadcn/ui
+  - See: `.planning/phases/02-core-ui/02-SUMMARY.md`
 
 ## Key Decisions Made
 
