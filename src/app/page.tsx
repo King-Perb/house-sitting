@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero";
 import {
   AboutSection,
+  ContactSection,
   FAQSection,
   HowItWorksSection,
   PricingSection,
@@ -32,11 +33,8 @@ export default function Home() {
       {/* FAQ Section */}
       <FAQSection />
 
-      <section id="contact" className="py-16 bg-muted">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">Contact section coming soon...</p>
-        </div>
-      </section>
+      {/* Contact Section */}
+      <ContactSection />
 
       <section id="booking" className="py-16">
         <div className="container mx-auto px-4 text-center">
