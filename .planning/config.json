@@ -1,0 +1,48 @@
+{
+  "project": {
+    "name": "House & Pet Sitter Website",
+    "type": "web-application",
+    "framework": "nextjs",
+    "language": "typescript"
+  },
+  "workflow": {
+    "preferredCommitStyle": "conventional",
+    "contextBudget": {
+      "peak": 30,
+      "good": 50,
+      "degrading": 70
+    },
+    "execution": {
+      "parallelExecution": true,
+      "atomicCommits": true,
+      "verifyBeforeCommit": true
+    }
+  },
+  "preferences": {
+    "codeQuality": "high",
+    "testing": "essential",
+    "documentation": "comprehensive",
+    "seo": "critical"
+  },
+  "integrations": {
+    "calendly": {
+      "enabled": true,
+      "plan": "professional",
+      "payment": "stripe-native"
+    },
+    "stripe": {
+      "enabled": true,
+      "integration": "via-calendly"
+    },
+    "email": {
+      "provider": "resend",
+      "spamProtection": "hcaptcha"
+    }
+  },
+  "seo": {
+    "focus": "local",
+    "location": "Gran Canaria",
+    "aiReady": true,
+    "structuredData": true
+  }
+}
