@@ -41,6 +41,13 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
   - Card and Sheet shadcn/ui components
   - See: `.planning/phases/02-core-ui/02-SUMMARY.md`
 
+- ✅ **Phase 03: Hero Section** (2026-01-27)
+  - HeroSection with headline, subheadline, CTAs
+  - TrustBadges component with icons
+  - Gran Canaria prominently featured
+  - Responsive design
+  - See: `.planning/phases/03-hero-section/03-SUMMARY.md`
+
 - ✅ **Phase 02: Core UI Components & Layout** (2026-01-27)
   - Header with responsive navigation
   - MobileNav with Sheet slide-out menu
