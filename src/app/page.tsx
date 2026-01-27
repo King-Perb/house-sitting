@@ -1,5 +1,5 @@
 import { HeroSection } from "@/components/hero";
-import { AboutSection, PricingSection, ServicesSection } from "@/components/sections";
+import { AboutSection, HowItWorksSection, PricingSection, ServicesSection } from "@/components/sections";
 
 export default function Home() {
   return (
@@ -15,6 +15,9 @@ export default function Home() {
 
       {/* Pricing Section */}
       <PricingSection />
+
+      {/* How It Works Section */}
+      <HowItWorksSection />
 
       <section id="testimonials" className="py-16 bg-muted">
         <div className="container mx-auto px-4 text-center">
