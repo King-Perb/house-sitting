@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero";
 import {
   AboutSection,
+  BookingSection,
   ContactSection,
   FAQSection,
   HowItWorksSection,
@@ -36,11 +37,8 @@ export default function Home() {
       {/* Contact Section */}
       <ContactSection />
 
-      <section id="booking" className="py-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">Booking section coming soon...</p>
-        </div>
-      </section>
+      {/* Booking Section */}
+      <BookingSection />
     </>
   );
 }
