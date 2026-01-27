@@ -35,6 +35,14 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
 
 - ✅ **Phase 02: Core UI Components & Layout** (2026-01-27)
   - Header with responsive navigation
+  - Footer with three-column layout
+  - Layout wrapper component
+  - MobileNav with Sheet slide-out menu
+  - Card and Sheet shadcn/ui components
+  - See: `.planning/phases/02-core-ui/02-SUMMARY.md`
+
+- ✅ **Phase 02: Core UI Components & Layout** (2026-01-27)
+  - Header with responsive navigation
   - MobileNav with Sheet slide-out menu
   - Footer with three-column layout
   - Layout wrapper component
