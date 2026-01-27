@@ -6,85 +6,95 @@
 
 ### Files Created
 - `src/components/sections/about-section.tsx` - About section component
-- `src/components/sections/index.ts` - Barrel exports for sections
+- `src/components/sections/index.ts` - Barrel export file
 
 ### Files Modified
-- `src/app/page.tsx` - Integrated AboutSection component
+- `src/app/page.tsx` - Integrated AboutSection
 
 ## Component Structure
 
 ```
 src/components/sections/
-├── about-section.tsx  # About section with photo, story, credentials
+├── about-section.tsx  # Full about section with photo and content
 └── index.ts           # Barrel exports
 ```
 
-## Component Features
+## Design Decisions
 
-### AboutSection
-- Two-column responsive layout (photo + content)
-- Placeholder photo area (gradient with icon until real photo available)
-- Personal story content with authentic, warm tone
-- Credentials grid (4 items with icons)
-- Gran Canaria and service areas prominently mentioned
-- Dual CTA buttons
-- Proper ARIA labeling (aria-labelledby)
+### Layout
+- Two-column grid layout (photo left, content right)
+- Single column stack on mobile
+- Decorative tilted background behind photo placeholder
+- Responsive spacing with md:py-24 for desktop
 
-## Content Structure
+### Content Structure
+1. **Photo area**: Placeholder with Heart icon (to be replaced with real photo)
+2. **Heading**: "Meet Your Trusted House & Pet Sitter"
+3. **Personal Story**: Three paragraphs building trust and connection
+4. **Credentials**: 4 badges in 2x2 grid
+5. **Service Areas**: Text listing Gran Canaria locations
+6. **CTA Button**: "Get in Touch" linking to contact section
 
-### Personal Story
-- Introduction paragraph establishing trust
-- Journey/motivation paragraph
-- Service area paragraph with specific locations
+### Credentials Display
+- 5+ Years Experience (Clock icon)
+- Fully Insured (Shield icon)
+- Background Checked (BadgeCheck icon)
+- Local Gran Canaria Expert (MapPin icon)
 
-### Credentials Displayed
-1. **5+ Years Experience** - Caring for pets and homes
-2. **Fully Insured** - Complete liability coverage
-3. **Background Checked** - Verified and trusted
-4. **Pet First Aid Certified** - Emergency preparedness
+## Content Decisions
 
-### Service Areas Mentioned
-- Gran Canaria (primary)
+### Personal Story Key Points
+- Passion for animals, treats pets as family
+- 5+ years professional experience
+- Varied pet experience (dogs, cats, birds, rabbits)
+- Long-time Gran Canaria resident
+- Knowledge of local vets, pet stores, walking routes
+
+### Service Areas Listed
 - Las Palmas
 - Maspalomas
 - Playa del Inglés
+- San Agustín
+- Meloneras
+- Telde
+- Surrounding areas
 
-### CTAs
-- Primary: "Book a Consultation" -> #booking
-- Secondary: "View My Services" -> #services
+### Tone
+- First person, warm and personal
+- Professional but approachable
+- Emphasizes care and reliability
+- Natural mention of Gran Canaria (not forced)
 
-## Design Decisions
+## Technical Implementation
 
-1. **Photo Placeholder**: Using gradient background with Heart icon until professional photography is available
-2. **Credentials Grid**: 2x2 grid layout with icons for visual appeal
-3. **Typography**: Mix of font weights to create hierarchy
-4. **Color Strategy**: Primary color for icons and highlights, muted for supporting text
-
-## Responsive Breakpoints
-- Mobile: < 1024px (lg) - Single column, stacked layout
-- Desktop: ≥ 1024px - Two-column layout (photo left, content right)
+- Uses Lucide React icons for credentials
+- Next.js Image component ready for photo integration
+- Semantic HTML with proper aria-labelledby
+- Responsive grid with Tailwind breakpoints
 
 ## Deviations from Plan
-1. **Photo**: Used placeholder gradient instead of actual image file (public/images/profile.jpg) - can be replaced with professional photography later
 
-## Verification Results
-- [x] `npm run build` - Succeeds without TypeScript errors
-- [x] About section renders with two-column layout
-- [x] Photo placeholder displays correctly
-- [x] Personal story content with warm, authentic tone
-- [x] Credentials clearly visible in grid format
-- [x] Gran Canaria mentioned naturally with specific areas
-- [x] Responsive layout works on all breakpoints
+1. **Photo**: Used decorative placeholder instead of image file
+   - Reasoning: No actual photo file available yet
+   - Component is ready for real photo when available
+   - Note added in placeholder: "Professional photo coming soon"
 
 ## Success Criteria Met
-- [x] AboutSection component created
+
+- [x] AboutSection component created at src/components/sections/about-section.tsx
 - [x] Two-column responsive layout (photo + content)
-- [x] Photo integration (placeholder ready for real image)
+- [x] Photo integration placeholder with Next.js Image-ready structure
 - [x] Personal story content with authentic, warm tone
-- [x] Credentials displayed (experience, insurance, background check)
+- [x] Credentials displayed (experience, insurance, background check, local expert)
 - [x] Gran Canaria service area mentioned naturally
 - [x] Section integrated into homepage after Hero
 - [x] Fully responsive on all device sizes
-- [x] Accessible (semantic HTML, alt text, proper heading hierarchy)
+- [x] Accessible (semantic HTML, aria-labelledby, proper heading hierarchy)
 - [x] `npm run dev` works without errors
 - [x] `npm run build` succeeds
+
+## Notes
+
+- Photo placeholder should be replaced with professional headshot
+- Content can be personalized with actual service provider details
+- Service areas list can be updated based on actual coverage
