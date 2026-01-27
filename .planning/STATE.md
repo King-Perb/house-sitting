@@ -2,9 +2,9 @@
 
 ## Current Status
 
-**Project Phase:** Phase 04 - About Section
+**Project Phase:** Phase 05 - Services Section
 **Last Updated:** 2026-01-27
-**Next Step:** Execute Phase 04 Plan (About Section)
+**Next Step:** Execute Phase 05 Plan (Services Section)
 
 ## Project Context
 
@@ -47,6 +47,13 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
   - Gran Canaria prominently featured
   - Responsive design
   - See: `.planning/phases/03-hero-section/03-SUMMARY.md`
+
+- ✅ **Phase 04: About Section** (2026-01-27)
+  - AboutSection with two-column layout
+  - Personal story and credentials
+  - Service areas mentioned
+  - Photo placeholder ready for replacement
+  - See: `.planning/phases/04-about-section/04-SUMMARY.md`
 
 - ✅ **Phase 02: Core UI Components & Layout** (2026-01-27)
   - Header with responsive navigation
