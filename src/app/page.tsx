@@ -8,9 +8,11 @@ import {
   PricingSection,
   ServicesSection,
   TestimonialsSection,
+  TypeformSection,
 } from "@/components/sections";
 import { JsonLd } from "@/components/seo";
 import { generateServicesSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { SECTION_VISIBILITY } from "@/lib/section-visibility";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://housepetsitter.com";
 
@@ -28,31 +30,34 @@ export default function Home() {
       <JsonLd data={breadcrumbSchema} />
 
       {/* Hero Section */}
-      <HeroSection />
+      {SECTION_VISIBILITY.hero && <HeroSection />}
 
       {/* About Section */}
-      <AboutSection />
+      {SECTION_VISIBILITY.about && <AboutSection />}
 
       {/* Services Section */}
-      <ServicesSection />
+      {SECTION_VISIBILITY.services && <ServicesSection />}
 
       {/* Pricing Section */}
-      <PricingSection />
+      {SECTION_VISIBILITY.pricing && <PricingSection />}
 
       {/* How It Works Section */}
-      <HowItWorksSection />
+      {SECTION_VISIBILITY.howItWorks && <HowItWorksSection />}
 
       {/* Testimonials Section */}
-      <TestimonialsSection />
+      {SECTION_VISIBILITY.testimonials && <TestimonialsSection />}
 
       {/* FAQ Section */}
-      <FAQSection />
+      {SECTION_VISIBILITY.faq && <FAQSection />}
 
       {/* Contact Section */}
-      <ContactSection />
+      {SECTION_VISIBILITY.contact && <ContactSection />}
+
+      {/* Typeform Contact Section */}
+      {SECTION_VISIBILITY.typeformContact && <TypeformSection />}
 
       {/* Booking Section */}
-      <BookingSection />
+      {SECTION_VISIBILITY.booking && <BookingSection />}
     </>
   );
 }

@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface StarRatingProps {
-  rating: number;
-  size?: "sm" | "md" | "lg";
-  className?: string;
+  readonly rating: number;
+  readonly size?: "sm" | "md" | "lg";
+  readonly className?: string;
 }
 
 const sizeClasses = {
@@ -19,8 +19,8 @@ export function StarRating({ rating, size = "md", className }: StarRatingProps) 
   return (
     <div
       className={cn("flex gap-0.5", className)}
-      role="img"
-      aria-label={`${rating} out of 5 stars`}
+      aria-hidden="true"
+      data-rating={rating}
     >
       {stars.map((star) => (
         <Star

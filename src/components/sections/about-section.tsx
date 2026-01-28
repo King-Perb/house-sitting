@@ -48,7 +48,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="py-16 md:py-24 bg-background scroll-mt-24"
+      className="py-16 md:py-24 bg-muted scroll-mt-24"
       aria-labelledby="about-heading"
     >
       <div className="container mx-auto px-4">
@@ -169,7 +169,7 @@ export function AboutSection() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
-                <Link href="#booking">Book a Consultation</Link>
+                <Link href="#contact">Get in Touch</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="#services">View My Services</Link>

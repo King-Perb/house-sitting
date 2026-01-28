@@ -31,9 +31,9 @@ export const trustBadges: TrustBadge[] = [
 ];
 
 interface TrustBadgesProps {
-  variant?: "compact" | "expanded";
-  className?: string;
-  showAll?: boolean;
+  readonly variant?: "compact" | "expanded";
+  readonly className?: string;
+  readonly showAll?: boolean;
 }
 
 export function TrustBadges({
@@ -46,16 +46,14 @@ export function TrustBadges({
 
   if (variant === "expanded") {
     return (
-      <div
+      <ul
         className={cn("grid gap-4 sm:grid-cols-2 lg:grid-cols-4", className)}
-        role="list"
         aria-label="Trust indicators"
       >
         {badgesToShow.map((badge) => (
-          <div
+          <li
             key={badge.label}
             className="flex items-start gap-3 p-4 rounded-lg bg-background/50 border"
-            role="listitem"
           >
             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
               <badge.icon className="h-5 w-5 text-primary" aria-hidden="true" />
@@ -66,31 +64,29 @@ export function TrustBadges({
                 {badge.description}
               </span>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     );
   }
 
   return (
-    <div
+    <ul
       className={cn(
         "flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8",
         className
       )}
-      role="list"
       aria-label="Trust indicators"
     >
       {badgesToShow.map((badge) => (
-        <div
+        <li
           key={badge.label}
           className="flex items-center gap-2 text-muted-foreground"
-          role="listitem"
         >
           <badge.icon className="h-5 w-5 text-primary" aria-hidden="true" />
           <span className="text-sm font-medium">{badge.label}</span>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

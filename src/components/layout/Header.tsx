@@ -7,10 +7,10 @@ import { MobileNav } from "./MobileNav";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "#pricing", label: "Pricing" },
+  // { href: "#pricing", label: "Pricing" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
+  // { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -40,7 +40,7 @@ export function Header() {
             </a>
           ))}
           <Button asChild>
-            <a href="#booking">Book Now</a>
+            <a href="#contact">Get in Touch</a>
           </Button>
         </div>
 

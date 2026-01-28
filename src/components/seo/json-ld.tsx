@@ -1,6 +1,6 @@
 interface JsonLdProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  data: Record<string, any> | Record<string, any>[];
+  readonly data: Record<string, any> | Record<string, any>[];
 }
 
 export function JsonLd({ data }: JsonLdProps) {
@@ -9,9 +9,9 @@ export function JsonLd({ data }: JsonLdProps) {
 
   return (
     <>
-      {schemas.map((schema, index) => (
+      {schemas.map((schema) => (
         <script
-          key={`json-ld-${index}`}
+          key={JSON.stringify(schema)}
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schema, null, 0),

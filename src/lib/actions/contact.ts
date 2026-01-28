@@ -13,7 +13,7 @@ interface ContactActionResult {
 
 async function verifyHCaptcha(token: string): Promise<boolean> {
   const secretKey = process.env.HCAPTCHA_SECRET_KEY;
-  
+
   if (!secretKey) {
     console.warn("HCAPTCHA_SECRET_KEY not configured");
     // In development without key, allow submissions
@@ -118,7 +118,9 @@ export async function submitContactForm(
         <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
         <hr />
         <p><strong>Message:</strong></p>
-        <p>${message ? message.replace(/\n/g, "<br />") : "No message provided"}</p>
+        <p>${
+          message ? message.replaceAll("\n", "<br />") : "No message provided"
+        }</p>
         <hr />
         <p><small>This message was sent via the contact form on your website.</small></p>
       `,

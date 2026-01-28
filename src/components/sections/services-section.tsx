@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { services, serviceAreas, ServiceItem } from "@/lib/data/services";
 
-function ServiceCard({ service }: { service: ServiceItem }) {
+function ServiceCard({ service }: { readonly service: ServiceItem }) {
   const Icon = service.icon;
 
   return (

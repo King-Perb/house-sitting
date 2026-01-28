@@ -44,10 +44,10 @@ export function TestimonialsSection() {
           <p className="text-muted-foreground">
             Ready to experience the same peace of mind?{" "}
             <a
-              href="#booking"
+              href="#contact"
               className="text-primary font-medium hover:underline"
             >
-              Book your consultation today
+              Get in touch
             </a>
           </p>
         </div>

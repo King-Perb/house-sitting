@@ -95,16 +95,17 @@ export function ContactSection() {
             Get in Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions before booking? Send me a message and I&apos;ll get back
-            to you as soon as possible. For immediate bookings, use the{" "}
+            Send me a message and I&apos;ll get back
+            to you as soon as possible.
+            {/* For immediate bookings, use the{" "}
             <a href="#booking" className="text-primary hover:underline">
               booking calendar
-            </a>
+            </a> */}
             .
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto rounded-2xl border border-primary/10 bg-background/95 shadow-sm p-6 sm:p-8">
+        <div className="max-w-2xl mx-auto rounded-2xl border-2 border-primary/30 bg-card shadow-lg shadow-primary/5 p-6 sm:p-8">
           {/* Contact Info */}
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">

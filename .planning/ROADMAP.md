@@ -462,3 +462,10 @@ This roadmap breaks down the project into executable phases, each with clear goa
 - Client portal
 - Advanced analytics
 - A/B testing
+
+### Phase 24: Typeform Contact Hub (Optional)
+- Dedicated "Contact Me" section with Typeform integration
+- Toggle between booking and general enquiry flows
+- Configurable Typeform URLs via environment variables
+- Accessible, responsive embed implementation
+- Optional analytics/tracking for form starts/completions

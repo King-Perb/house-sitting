@@ -6,8 +6,8 @@ import { Testimonial } from "@/lib/data/testimonials";
 import { cn } from "@/lib/utils";
 
 interface TestimonialCardProps {
-  testimonial: Testimonial;
-  className?: string;
+  readonly testimonial: Testimonial;
+  readonly className?: string;
 }
 
 const serviceTypeConfig = {
@@ -32,8 +32,8 @@ function ClientAvatar({
   name,
   imageUrl,
 }: {
-  name: string;
-  imageUrl?: string;
+  readonly name: string;
+  readonly imageUrl?: string;
 }) {
   const initials = name
     .split(" ")

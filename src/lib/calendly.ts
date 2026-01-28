@@ -47,7 +47,7 @@ export function buildCalendlyUrl(
     url.searchParams.set("a1", prefill.phone);
   }
   if (prefill?.customAnswers) {
-    Object.entries(prefill.customAnswers).forEach(([key, value], index) => {
+    Object.entries(prefill.customAnswers).forEach(([, value], index) => {
       // Custom answers use a2, a3, etc.
       url.searchParams.set(`a${index + 2}`, value);
     });

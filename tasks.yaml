@@ -1,0 +1,124 @@
+# Ralphy Tasks - House & Pet Sitter Website
+# Generated from GSD phase plans
+# Run with: ralphy --yaml tasks.yaml
+
+tasks:
+  # Phase 01: Project Setup (COMPLETED)
+  # - name: "Phase 01: Project Setup & Foundation"
+  #   instruction: "Execute the plan in .planning/phases/01-project-setup/01-PLAN.md"
+
+  # Phase 02: Core UI (COMPLETED)
+  # - name: "Phase 02: Core UI Components & Layout"
+  #   instruction: "Execute the plan in .planning/phases/02-core-ui/02-PLAN.md"
+
+  # Phase 03: Hero Section (COMPLETED)
+  # - name: "Phase 03: Hero Section"
+  #   instruction: "Execute the plan in .planning/phases/03-hero-section/03-PLAN.md"
+
+  # Phase 04: About Section (COMPLETED)
+  # - name: "Phase 04: About You Section"
+  #   instruction: "Execute the plan in .planning/phases/04-about-section/04-PLAN.md"
+
+  # Phase 05: Services Section (COMPLETED)
+  # - name: "Phase 05: Services Section"
+  #   instruction: "Execute the plan in .planning/phases/05-services-section/05-PLAN.md"
+
+  # Phase 06: Pricing Section (COMPLETED)
+  # - name: "Phase 06: Pricing Section"
+  #   instruction: "Execute the plan in .planning/phases/06-pricing-section/06-PLAN.md"
+
+  # Phase 07: How It Works (COMPLETED)
+  # - name: "Phase 07: How It Works Section"
+  #   instruction: "Execute the plan in .planning/phases/07-how-it-works/07-PLAN.md"
+
+  # Phase 08: Testimonials (COMPLETED)
+  # - name: "Phase 08: Testimonials Section"
+  #   instruction: "Execute the plan in .planning/phases/08-testimonials/08-PLAN.md"
+
+  # Phase 09: FAQ Section (COMPLETED)
+  # - name: "Phase 09: FAQ Section"
+  #   instruction: "Execute the plan in .planning/phases/09-faq-section/09-PLAN.md"
+
+  # Phase 10: Contact Form (COMPLETED)
+  # - name: "Phase 10: Contact Form"
+  #   instruction: "Execute the plan in .planning/phases/10-contact-form/10-PLAN.md"
+
+  # Phase 11: Calendly Integration (COMPLETED)
+  # - name: "Phase 11: Calendly Integration"
+  #   instruction: "Execute the plan in .planning/phases/11-calendly-integration/11-PLAN.md"
+
+  # Phase 12: Trust & Footer (COMPLETED)
+  # - name: "Phase 12: Trust Indicators & Footer"
+  #   instruction: "Execute the plan in .planning/phases/12-trust-footer/12-PLAN.md"
+
+  # Phase 13: SEO Structured Data (COMPLETED)
+  # - name: "Phase 13: SEO - Structured Data"
+  #   instruction: "Execute the plan in .planning/phases/13-seo-structured-data/13-PLAN.md"
+
+  # Phase 14: SEO Local (COMPLETED)
+  # - name: "Phase 14: SEO - Local SEO"
+  #   instruction: "Execute the plan in .planning/phases/14-seo-local/14-PLAN.md"
+
+  # Phase 15: SEO Technical (COMPLETED)
+  # - name: "Phase 15: SEO - Technical"
+  #   instruction: "Execute the plan in .planning/phases/15-seo-technical/15-PLAN.md"
+
+  # Phase 16: Performance (COMPLETED)
+  # - name: "Phase 16: Performance Optimization"
+  #   instruction: "Execute the plan in .planning/phases/16-performance/16-PLAN.md"
+
+  # === REMAINING PHASES (not yet executed) ===
+
+  - name: "Phase 17: Accessibility & Testing"
+    instruction: |
+      Execute the plan in .planning/phases/17-accessibility/17-PLAN.md
+
+      Goal: Ensure WCAG 2.1 AA compliance and cross-browser compatibility
+
+      Key deliverables:
+      - Keyboard navigation working throughout
+      - Screen reader compatibility
+      - ARIA labels on interactive elements
+      - Color contrast compliance
+      - Cross-browser testing (Chrome, Firefox, Safari, Edge)
+      - Mobile device testing
+
+  - name: "Phase 18: Content & Copywriting"
+    instruction: |
+      Execute the plan in .planning/phases/18-content/18-PLAN.md
+
+      Goal: Finalize all placeholder content with real data
+
+      Key deliverables:
+      - Replace placeholder text with final copy
+      - Add real testimonials (or realistic samples)
+      - Finalize pricing information
+      - Complete meta descriptions
+      - Add alt text for all images
+
+  - name: "Phase 19: Pre-Launch Setup"
+    instruction: |
+      Execute the plan in .planning/phases/19-pre-launch/19-PLAN.md
+
+      Goal: Complete all pre-launch requirements
+
+      Key deliverables:
+      - Environment variables documented
+      - Calendly URL configured
+      - Contact form tested
+      - Privacy Policy page
+      - Terms of Service page
+      - Final checklist verification
+
+  - name: "Phase 20: Launch & Verification"
+    instruction: |
+      Execute the plan in .planning/phases/20-launch/20-PLAN.md
+
+      Goal: Deploy and verify production readiness
+
+      Key deliverables:
+      - Production build verification
+      - All features tested
+      - Mobile responsiveness verified
+      - SEO elements validated
+      - Performance benchmarks met

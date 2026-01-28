@@ -60,7 +60,7 @@ const paymentTerms = [
 function PricingCard({
   plan,
 }: {
-  plan: (typeof pricingPlans)[0];
+  readonly plan: (typeof pricingPlans)[0];
 }) {
   return (
     <Card

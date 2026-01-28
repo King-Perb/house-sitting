@@ -62,8 +62,8 @@ export default function BookPage() {
             <div className="bg-muted/50 rounded-lg p-6">
               <h2 className="font-semibold text-lg mb-4">What to Expect</h2>
               <ul className="space-y-3">
-                {whatToExpect.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {whatToExpect.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <span className="text-sm text-muted-foreground">{item}</span>
                   </li>
@@ -79,13 +79,13 @@ export default function BookPage() {
                 happy to help.
               </p>
               <div className="space-y-3">
-                <a
+                <Link
                   href="/#contact"
                   className="flex items-center gap-2 text-sm text-primary hover:underline"
                 >
                   <Mail className="h-4 w-4" />
                   Send a message
-                </a>
+                </Link>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Phone className="h-4 w-4" />
                   Response within 24 hours
