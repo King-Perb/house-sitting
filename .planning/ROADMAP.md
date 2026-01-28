@@ -345,7 +345,32 @@ This roadmap breaks down the project into executable phases, each with clear goa
 
 ---
 
-## Phase 17: Accessibility & Testing
+## Phase 17: Internationalization (i18n)
+
+**Goal:** Implement multilanguage support for English (primary), Spanish (secondary), and German (optional) to serve expats, tourists, and local residents in Gran Canaria.
+
+**Deliverables:**
+- next-intl library installed and configured
+- Locale routing with `[locale]` segment (`/en/`, `/es/`, `/de/`)
+- Middleware for locale detection and redirects
+- Translation files for English, Spanish, German
+- LanguageSwitcher component in header
+- All hardcoded content extracted to translation files
+- Spanish translations for all content
+- hreflang tags for SEO
+- Updated sitemap with all locale variants
+
+**Success Criteria:**
+- Site viewable in English, Spanish, and German
+- Language switcher visible and functional
+- URLs reflect language (`/en/about`, `/es/about`, etc.)
+- hreflang tags validate correctly
+- User language preference persists
+- Missing translations fall back to English
+
+---
+
+## Phase 18: Accessibility & Testing
 
 **Goal:** Ensure accessibility and cross-browser compatibility
 
@@ -367,7 +392,7 @@ This roadmap breaks down the project into executable phases, each with clear goa
 
 ---
 
-## Phase 18: Content & Copywriting
+## Phase 19: Content & Copywriting
 
 **Goal:** Finalize all content and copy
 
@@ -390,7 +415,7 @@ This roadmap breaks down the project into executable phases, each with clear goa
 
 ---
 
-## Phase 19: Pre-Launch Setup
+## Phase 20: Pre-Launch Setup
 
 **Goal:** Complete all pre-launch requirements
 
@@ -415,7 +440,7 @@ This roadmap breaks down the project into executable phases, each with clear goa
 
 ---
 
-## Phase 20: Launch & Verification
+## Phase 21: Launch & Verification
 
 **Goal:** Launch website and verify everything works
 
@@ -445,25 +470,25 @@ This roadmap breaks down the project into executable phases, each with clear goa
 
 ## Post-Launch Phases (Future)
 
-### Phase 21: Post-Launch SEO
+### Phase 22: Post-Launch SEO
 - Submit sitemap to search engines
 - List on local business directories
 - Start collecting Google reviews
 - Monitor keyword rankings
 - Track local search performance
 
-### Phase 22: Content Marketing (Optional)
+### Phase 23: Content Marketing (Optional)
 - Blog section
 - Location-focused blog posts
 - SEO content creation
 
-### Phase 23: Advanced Features (If Needed)
+### Phase 24: Advanced Features (If Needed)
 - Custom booking system (if Calendly limitations arise)
 - Client portal
 - Advanced analytics
 - A/B testing
 
-### Phase 24: Typeform Contact Hub (Optional)
+### Phase 25: Typeform Contact Hub (Optional)
 - Dedicated "Contact Me" section with Typeform integration
 - Toggle between booking and general enquiry flows
 - Configurable Typeform URLs via environment variables

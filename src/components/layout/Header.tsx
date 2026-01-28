@@ -1,24 +1,27 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "./MobileNav";
-
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  // { href: "#pricing", label: "Pricing" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#faq", label: "FAQ" },
-  // { href: "#contact", label: "Contact" },
-];
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
+  const t = useTranslations("nav");
+  const tCommon = useTranslations("common");
+
+  const navLinks = [
+    { href: "#about", label: t("about") },
+    { href: "#services", label: t("services") },
+    { href: "#testimonials", label: t("testimonials") },
+    { href: "#faq", label: t("faq") },
+  ];
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav
         className="container mx-auto flex h-16 items-center justify-between px-4"
-        aria-label="Main navigation"
+        aria-label={t("mainNavigation")}
       >
         {/* Logo */}
         <Link
@@ -39,13 +42,15 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <LanguageSwitcher />
           <Button asChild>
-            <a href="#contact">Get in Touch</a>
+            <a href="#contact">{tCommon("getInTouch")}</a>
           </Button>
         </div>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher />
           <MobileNav navLinks={navLinks} />
         </div>
       </nav>

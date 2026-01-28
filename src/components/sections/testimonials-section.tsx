@@ -1,8 +1,12 @@
+import { getTranslations } from "next-intl/server";
 import { Users } from "lucide-react";
 import { TestimonialCard } from "@/components/ui/testimonial-card";
 import { testimonials } from "@/lib/data/testimonials";
 
-export function TestimonialsSection() {
+export async function TestimonialsSection() {
+  const t = await getTranslations("testimonials");
+  const tCommon = await getTranslations("common");
+
   return (
     <section
       id="testimonials"
@@ -16,38 +20,55 @@ export function TestimonialsSection() {
             id="testimonials-heading"
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            What My Clients Say
+            {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Don&apos;t just take my word for it. Here&apos;s what clients
-            across Gran Canaria have to say about their experience.
+            {t("subtitle")}
           </p>
 
           {/* Social Proof Indicator */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
             <Users className="h-5 w-5 text-primary" aria-hidden="true" />
             <span className="text-sm font-medium">
-              Trusted by 50+ clients in Gran Canaria
+              {t("socialProof")}
             </span>
           </div>
         </div>
 
         {/* Testimonials Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((testimonial) => (
-            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-          ))}
+          {testimonials.map((testimonial) => {
+            const reviewKey = testimonial.id === "1" ? "maria" :
+                             testimonial.id === "2" ? "thomas" :
+                             testimonial.id === "3" ? "elena" :
+                             testimonial.id === "4" ? "peter" : "sarah";
+
+            return (
+              <TestimonialCard
+                key={testimonial.id}
+                testimonial={{
+                  ...testimonial,
+                  clientName: t(`reviews.${reviewKey}.name`),
+                  testimonialText: t(`reviews.${reviewKey}.text`),
+                  location: t(`reviews.${reviewKey}.location`),
+                  date: t(`reviews.${reviewKey}.date`),
+                  petType: t(`reviews.${reviewKey}.service`),
+                  // Keep original serviceType from testimonial data
+                }}
+              />
+            );
+          })}
         </div>
 
         {/* Call to Action */}
         <div className="mt-12 text-center">
           <p className="text-muted-foreground">
-            Ready to experience the same peace of mind?{" "}
+            {t("cta")}{" "}
             <a
               href="#contact"
               className="text-primary font-medium hover:underline"
             >
-              Get in touch
+              {tCommon("getInTouch")}
             </a>
           </p>
         </div>

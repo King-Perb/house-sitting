@@ -2,9 +2,9 @@
 
 ## Current Status
 
-**Project Phase:** Phase 16 Complete - Ready for Phase 17 (Accessibility)
-**Last Updated:** 2026-01-27
-**Next Step:** Execute Phase 17 (Accessibility) - Stopped as requested
+**Project Phase:** Phase 17 Complete - Ready for Phase 18 (Accessibility)
+**Last Updated:** 2026-01-28
+**Next Step:** Execute Phase 18 (Accessibility) - WCAG 2.1 AA compliance
 
 ## Project Context
 
@@ -128,6 +128,15 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
   - Static generation for all pages
   - See: `.planning/phases/16-performance/16-SUMMARY.md`
 
+- ✅ **Phase 17: Internationalization (i18n)** (2026-01-28)
+  - next-intl library installed and configured
+  - Locale routing with `[locale]` segment (en, es, de)
+  - LanguageSwitcher component in header
+  - Comprehensive translation files for English, Spanish, and German
+  - hreflang tags and sitemap with locale alternates
+  - SEO metadata per locale (OpenGraph, alternates)
+  - See: `.planning/phases/17-i18n/17-PLAN.md`
+
 ## Key Decisions Made
 
 1. **Tech Stack:** Next.js + shadcn/ui + Tailwind CSS
@@ -140,7 +149,7 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
 ## Open Questions
 
 - [ ] What specific areas/neighborhoods in Gran Canaria will be served? (Las Palmas, Maspalomas, Playa del Inglés, etc.)
-- [ ] What languages should the site support? (English primary, Spanish secondary, German?)
+- [x] What languages should the site support? → English (primary), Spanish (secondary), German (optional)
 - [ ] Do you have a physical address for Google Business Profile? (or service area only?)
 - [ ] What local communities/directories should we target? (expat groups, pet communities, etc.)
 - [ ] What are the exact pricing rates?
@@ -165,10 +174,11 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
 
 ## Next Actions
 
-1. **Phase 17: Accessibility** - WCAG 2.1 AA compliance audit and fixes
-2. **Phase 18: Content** - Finalize placeholder content with real data
-3. **Phase 19: Pre-Launch** - Final testing and checklist
-4. **Phase 20: Launch** - Deployment and go-live
+1. **Phase 17: i18n** - Multilanguage support (English, Spanish, German)
+2. **Phase 18: Accessibility** - WCAG 2.1 AA compliance audit and fixes
+3. **Phase 19: Content** - Finalize placeholder content with real data
+4. **Phase 20: Pre-Launch** - Final testing and checklist
+5. **Phase 21: Launch** - Deployment and go-live
 
 ### Ad-hoc Todos (GSD-style)
 
@@ -188,8 +198,8 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
 
 ## Notes
 
-- Phases 01-16 complete
-- Stopping before Phase 17 (Accessibility) as requested
+- Phases 01-17 complete
+- i18n fully implemented with EN/ES/DE support
 - All core functionality implemented
-- SEO foundations in place
-- Ready for content finalization and launch preparation
+- SEO foundations in place with hreflang tags
+- Ready for Phase 18 (Accessibility audit)

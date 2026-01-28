@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { Check, CreditCard, Clock, Shield } from "lucide-react";
 import {
   Card,
@@ -7,91 +8,102 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-// Pricing data - placeholder values to be finalized in content phase
-const pricingPlans = [
-  {
-    id: "daily",
-    name: "Daily Rate",
-    price: 35,
-    period: "per day",
-    description: "Perfect for short trips and weekend getaways",
-    highlighted: false,
-  },
-  {
-    id: "weekly",
-    name: "Weekly Rate",
-    price: 210,
-    period: "per week",
-    description: "Save €35 with our weekly package",
-    discount: "Save 15%",
-    highlighted: true,
-  },
-];
-
-const includedItems = [
-  "Daily visits (1-2 times per day)",
-  "Pet feeding, water & medication",
-  "Dog walking & exercise",
-  "House security checks",
-  "Plant watering & garden care",
-  "Mail & package collection",
-  "Photo & video updates",
-  "24/7 emergency contact",
-];
-
-const paymentTerms = [
-  {
-    icon: CreditCard,
-    title: "Easy Online Payment",
-    description: "Secure payment via Stripe when booking through Calendly",
-  },
-  {
-    icon: Clock,
-    title: "Flexible Booking",
-    description: "Book at least 48 hours in advance for guaranteed availability",
-  },
-  {
-    icon: Shield,
-    title: "Cancellation Policy",
-    description: "Free cancellation up to 48 hours before your booking starts",
-  },
-];
-
 function PricingCard({
-  plan,
+  name,
+  price,
+  period,
+  description,
+  discount,
+  highlighted,
 }: {
-  readonly plan: (typeof pricingPlans)[0];
+  readonly name: string;
+  readonly price: string;
+  readonly period: string;
+  readonly description: string;
+  readonly discount?: string;
+  readonly highlighted: boolean;
 }) {
   return (
     <Card
       className={`h-full relative border border-primary/10 bg-background/95 shadow-sm ${
-        plan.highlighted
+        highlighted
           ? "border-primary shadow-lg scale-[1.02]"
           : ""
       }`}
     >
-      {plan.discount && (
+      {discount && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
           <span className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
-            {plan.discount}
+            {discount}
           </span>
         </div>
       )}
       <CardHeader className="text-center pb-2">
-        <CardTitle className="text-xl">{plan.name}</CardTitle>
-        <CardDescription>{plan.description}</CardDescription>
+        <CardTitle className="text-xl">{name}</CardTitle>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent className="text-center">
         <div className="mb-4">
-          <span className="text-4xl font-bold">€{plan.price}</span>
-          <span className="text-muted-foreground ml-1">{plan.period}</span>
+          <span className="text-4xl font-bold">{price}</span>
+          <span className="text-muted-foreground ml-1">{period}</span>
         </div>
       </CardContent>
     </Card>
   );
 }
 
-export function PricingSection() {
+export async function PricingSection() {
+  const t = await getTranslations("pricing");
+
+  const pricingPlans = [
+    {
+      id: "daily",
+      name: t("daily.name"),
+      price: t("daily.price"),
+      period: t("daily.period"),
+      description: t("daily.description"),
+      highlighted: false,
+    },
+    {
+      id: "weekly",
+      name: t("weekly.name"),
+      price: t("weekly.price"),
+      period: t("weekly.period"),
+      description: t("weekly.description"),
+      discount: t("weekly.badge"),
+      highlighted: true,
+    },
+  ];
+
+  const includedItems = [
+    t("included.items.visits"),
+    t("included.items.feeding"),
+    t("included.items.walking"),
+    t("included.items.security"),
+    t("included.items.plants"),
+    t("included.items.mail"),
+    t("included.items.updates"),
+    t("included.items.emergency"),
+  ];
+
+  const paymentTerms = [
+    {
+      icon: CreditCard,
+      title: t("terms.payment.title"),
+      description: t("terms.payment.description"),
+    },
+    {
+      icon: Clock,
+      title: t("terms.booking.title"),
+      description: t("terms.booking.description"),
+    },
+    {
+      icon: Shield,
+      title: t("terms.cancellation.title"),
+      description: t("terms.cancellation.description"),
+    },
+  ];
+
   return (
     <section
       id="pricing"
@@ -105,25 +117,32 @@ export function PricingSection() {
             id="pricing-heading"
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Transparent Pricing
+            {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            No hidden fees, no surprises. Just honest, straightforward pricing
-            for quality house and pet sitting services in Gran Canaria.
+            {t("subtitle")}
           </p>
         </div>
 
         {/* Pricing Cards */}
         <div className="grid gap-6 md:grid-cols-2 max-w-2xl mx-auto mb-16">
           {pricingPlans.map((plan) => (
-            <PricingCard key={plan.id} plan={plan} />
+            <PricingCard
+              key={plan.id}
+              name={plan.name}
+              price={plan.price}
+              period={plan.period}
+              description={plan.description}
+              discount={plan.discount}
+              highlighted={plan.highlighted}
+            />
           ))}
         </div>
 
         {/* What's Included */}
         <div className="bg-muted/50 rounded-xl p-8 mb-12">
           <h3 className="text-2xl font-semibold mb-6 text-center">
-            What&apos;s Included
+            {t("included.title")}
           </h3>
           <div className="grid gap-3 sm:grid-cols-2 max-w-3xl mx-auto">
             {includedItems.map((item) => (
@@ -161,9 +180,7 @@ export function PricingSection() {
         {/* Additional Services Note */}
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            <strong>Need something extra?</strong> Additional services like
-            extended overnight stays, multiple pets, or special requirements
-            can be accommodated. Contact me for a custom quote.
+            {t("additionalNote")}
           </p>
         </div>
       </div>

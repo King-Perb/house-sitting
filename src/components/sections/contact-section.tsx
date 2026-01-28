@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
@@ -20,6 +21,7 @@ import { contactFormSchema, ContactFormData } from "@/lib/schemas/contact";
 import { submitContactForm } from "@/lib/actions/contact";
 
 export function ContactSection() {
+  const t = useTranslations("contact");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitResult, setSubmitResult] = useState<{
     success: boolean;
@@ -70,7 +72,7 @@ export function ContactSection() {
     } catch {
       setSubmitResult({
         success: false,
-        message: "An unexpected error occurred. Please try again.",
+        message: t("form.errorDesc"),
       });
     } finally {
       setIsSubmitting(false);
@@ -92,16 +94,10 @@ export function ContactSection() {
             id="contact-heading"
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Get in Touch
+            {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Send me a message and I&apos;ll get back
-            to you as soon as possible.
-            {/* For immediate bookings, use the{" "}
-            <a href="#booking" className="text-primary hover:underline">
-              booking calendar
-            </a> */}
-            .
+            {t("subtitle")}
           </p>
         </div>
 
@@ -110,11 +106,11 @@ export function ContactSection() {
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Mail className="h-4 w-4 text-primary" />
-              <span>Response within 24 hours</span>
+              <span>{t("responseTime")}</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4 text-primary" />
-              <span>Available for calls after initial contact</span>
+              <span>{t("availableForCalls")}</span>
             </div>
           </div>
 
@@ -147,9 +143,9 @@ export function ContactSection() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name *</FormLabel>
+                      <FormLabel>{t("form.nameRequired")}</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your name" {...field} />
+                        <Input placeholder={t("form.namePlaceholder")} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -161,11 +157,11 @@ export function ContactSection() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email *</FormLabel>
+                      <FormLabel>{t("form.emailRequired")}</FormLabel>
                       <FormControl>
                         <Input
                           type="email"
-                          placeholder="your.email@example.com"
+                          placeholder={t("form.emailPlaceholder")}
                           {...field}
                         />
                       </FormControl>
@@ -181,11 +177,11 @@ export function ContactSection() {
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Phone (optional)</FormLabel>
+                    <FormLabel>{t("form.phone")}</FormLabel>
                     <FormControl>
                       <Input
                         type="tel"
-                        placeholder="+34 XXX XXX XXX"
+                        placeholder={t("form.phonePlaceholder")}
                         {...field}
                       />
                     </FormControl>
@@ -200,10 +196,10 @@ export function ContactSection() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message (optional)</FormLabel>
+                    <FormLabel>{t("form.message")}</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Tell me about your needs - pets, dates, any special requirements..."
+                        placeholder={t("form.messagePlaceholder")}
                         className="min-h-[120px] resize-y"
                         {...field}
                       />
@@ -242,12 +238,12 @@ export function ContactSection() {
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Sending...
+                    {t("form.sending")}
                   </>
                 ) : (
                   <>
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    {t("form.submit")}
                   </>
                 )}
               </Button>
@@ -256,8 +252,7 @@ export function ContactSection() {
 
           {/* Privacy Note */}
           <p className="mt-6 text-xs text-muted-foreground text-center">
-            Your information is safe with me. I&apos;ll only use it to respond to
-            your inquiry and will never share it with third parties.
+            {t("privacy")}
           </p>
         </div>
       </div>

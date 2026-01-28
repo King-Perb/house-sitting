@@ -1,0 +1,420 @@
+{
+  "common": {
+    "bookNow": "Reservar",
+    "contactMe": "Contáctame",
+    "getInTouch": "Contactar",
+    "learnMore": "Más información",
+    "viewServices": "Ver servicios",
+    "viewMyServices": "Ver mis servicios",
+    "getStarted": "Empezar",
+    "viewAll": "Ver todo",
+    "readMore": "Leer más",
+    "submit": "Enviar",
+    "sendMessage": "Enviar mensaje",
+    "sending": "Enviando...",
+    "loading": "Cargando...",
+    "servingGranCanaria": "Sirviendo Gran Canaria",
+    "servingGranCanariaSpain": "Sirviendo Gran Canaria, España"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "pricing": "Precios",
+    "howItWorks": "Cómo funciona",
+    "testimonials": "Testimonios",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "book": "Reservar",
+    "mainNavigation": "Navegación principal",
+    "mobileNavigation": "Navegación móvil",
+    "footerNavigation": "Navegación del pie de página",
+    "openMenu": "Abrir menú",
+    "navigationMenu": "Menú de navegación"
+  },
+  "hero": {
+    "titlePart1": "Tu cuidador de mascotas y casas de confianza en",
+    "titlePart2": "Gran Canaria",
+    "subtitle": "Tranquilidad mientras estás fuera. Cuidado profesional y confiable para tus mascotas y hogar. Sirviendo todas las áreas de Gran Canaria con atención personalizada y amor genuino por los animales.",
+    "tagline": "Cuidado de casas y mascotas de confianza",
+    "taglineSubtitle": "Hogares reales, mascotas felices, y un cuidador que trata tu casa como la suya.",
+    "cta": "Contactar",
+    "secondaryCta": "Ver servicios"
+  },
+  "trustBadges": {
+    "insured": "Totalmente asegurado",
+    "insuredDesc": "Cobertura de responsabilidad completa",
+    "background": "Verificación de antecedentes",
+    "backgroundDesc": "Verificado y confiable",
+    "experience": "5+ años de experiencia",
+    "experienceDesc": "Servicio profesional",
+    "clients": "50+ clientes satisfechos",
+    "clientsDesc": "Confianza de familias"
+  },
+  "about": {
+    "title": "Conoce a tu cuidador de casas y mascotas",
+    "paragraph1": "Hola, estoy aquí para darte tranquilidad mientras estás fuera. Con más de 5 años de experiencia cuidando mascotas y hogares en Gran Canaria, entiendo que tus mascotas son familia y tu hogar es tu santuario.",
+    "paragraph2": "Mi camino en el cuidado de mascotas y casas comenzó con un profundo amor por los animales y un deseo genuino de ayudar a los dueños de mascotas a viajar sin preocupaciones. Ya sean paseos diarios, administración de medicamentos, o simplemente proporcionar compañía, trato a cada mascota como si fuera la mía.",
+    "paragraph3": "Con base en Gran Canaria, sirvo todas las áreas incluyendo Las Palmas, Maspalomas, Playa del Inglés y comunidades circundantes. Conozco los veterinarios locales, parques pet-friendly y todo lo que tu mascota pueda necesitar.",
+    "credentials": {
+      "experience": "5+ años de experiencia",
+      "experienceDesc": "Cuidando mascotas y hogares",
+      "insured": "Totalmente asegurado",
+      "insuredDesc": "Cobertura de responsabilidad completa",
+      "background": "Verificación de antecedentes",
+      "backgroundDesc": "Verificado y confiable",
+      "firstAid": "Certificado en primeros auxilios para mascotas",
+      "firstAidDesc": "Preparación para emergencias"
+    },
+    "carousel": {
+      "previous": "Foto anterior",
+      "next": "Siguiente foto",
+      "showPhoto": "Mostrar foto {number}"
+    }
+  },
+  "services": {
+    "title": "Servicios adaptados a tus necesidades",
+    "subtitle": "Ya sea que necesites cuidado de mascotas, cuidado de casa, o ambos, ofrezco servicios flexibles para darte total tranquilidad mientras estás fuera de tu hogar en Gran Canaria.",
+    "whatsIncluded": "Qué incluye:",
+    "petCare": {
+      "title": "Cuidado de mascotas",
+      "description": "Cuidado integral para tus queridas mascotas, asegurando que se mantengan felices, saludables y cómodas mientras estás fuera.",
+      "items": {
+        "feeding": "Alimentación diaria y agua fresca",
+        "walks": "Paseos regulares y ejercicio",
+        "medication": "Administración de medicamentos",
+        "playtime": "Tiempo de juego y compañía",
+        "overnight": "Estancias nocturnas disponibles",
+        "updates": "Actualizaciones diarias con fotos y videos"
+      }
+    },
+    "houseCare": {
+      "title": "Cuidado de casa",
+      "description": "Mantén tu hogar seguro y bien cuidado con revisiones regulares y atención dedicada a tu propiedad.",
+      "items": {
+        "security": "Revisiones de seguridad diarias",
+        "mail": "Recogida de correo y paquetes",
+        "plants": "Riego y cuidado de plantas",
+        "lighting": "Gestión de luces y persianas",
+        "ventilation": "Monitoreo de ventilación y temperatura",
+        "emergency": "Disponibilidad para emergencias"
+      }
+    },
+    "additional": {
+      "title": "Servicios adicionales",
+      "description": "Servicios extra para que tu tiempo fuera sea aún más tranquilo. Personaliza tu paquete de cuidado según tus necesidades.",
+      "items": {
+        "garden": "Mantenimiento de jardín",
+        "pool": "Monitoreo de piscina y spa",
+        "grocery": "Compras de supermercado antes de tu llegada",
+        "transport": "Transporte de mascotas al veterinario/peluquería",
+        "keys": "Custodia de llaves y gestión de acceso",
+        "custom": "Solicitudes personalizadas bienvenidas"
+      }
+    },
+    "serviceArea": {
+      "title": "Área de cobertura",
+      "description": "Ofrezco servicios de cuidado de casas y mascotas en toda Gran Canaria, incluyendo:",
+      "notListed": "¿No ves tu área listada? Contáctame para discutir cobertura en otras partes de Gran Canaria."
+    }
+  },
+  "pricing": {
+    "title": "Precios transparentes",
+    "subtitle": "Sin tarifas ocultas, sin sorpresas. Solo precios honestos y directos para servicios de calidad de cuidado de casas y mascotas en Gran Canaria.",
+    "daily": {
+      "name": "Tarifa diaria",
+      "price": "€35",
+      "period": "por día",
+      "description": "Perfecto para viajes cortos y escapadas de fin de semana"
+    },
+    "weekly": {
+      "name": "Tarifa semanal",
+      "price": "€210",
+      "period": "por semana",
+      "description": "Ahorra €35 con nuestro paquete semanal",
+      "badge": "Ahorra 15%"
+    },
+    "included": {
+      "title": "Qué incluye",
+      "items": {
+        "visits": "Visitas diarias (1-2 veces al día)",
+        "feeding": "Alimentación, agua y medicamentos para mascotas",
+        "walking": "Paseos y ejercicio para perros",
+        "security": "Revisiones de seguridad de la casa",
+        "plants": "Riego de plantas y cuidado del jardín",
+        "mail": "Recogida de correo y paquetes",
+        "updates": "Actualizaciones con fotos y videos",
+        "emergency": "Contacto de emergencia 24/7"
+      }
+    },
+    "terms": {
+      "payment": {
+        "title": "Pago online fácil",
+        "description": "Pago seguro vía Stripe al reservar a través de Calendly"
+      },
+      "booking": {
+        "title": "Reserva flexible",
+        "description": "Reserva con al menos 48 horas de anticipación para disponibilidad garantizada"
+      },
+      "cancellation": {
+        "title": "Política de cancelación",
+        "description": "Cancelación gratuita hasta 48 horas antes del inicio de tu reserva"
+      }
+    },
+    "additionalNote": "¿Necesitas algo extra? Servicios adicionales como estancias nocturnas extendidas, múltiples mascotas o requisitos especiales pueden ser acomodados. Contáctame para un presupuesto personalizado."
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "Reservar tu cuidador de casas y mascotas es sencillo. Solo tres pasos fáciles y tendrás tranquilidad mientras estás fuera.",
+    "step1": {
+      "title": "Reserva una hora",
+      "description": "Selecciona tus fechas preferidas usando el calendario de reservas online. Ve disponibilidad en tiempo real y elige lo que mejor funcione para tu horario.",
+      "note": "Impulsado por Calendly"
+    },
+    "step2": {
+      "title": "Proporciona detalles",
+      "description": "Cuéntame sobre tus mascotas, hogar y cualquier requisito especial. El formulario de reserva captura todo lo que necesito para proporcionar el mejor cuidado.",
+      "note": "Formulario de admisión personalizado"
+    },
+    "step3": {
+      "title": "Paga y confirma",
+      "description": "Completa el pago seguro vía Stripe y recibe confirmación instantánea. Tu reserva queda asegurada una vez procesado el pago.",
+      "note": "Confirmación instantánea"
+    },
+    "goodToKnow": {
+      "title": "Bueno saber",
+      "advanceNotice": {
+        "title": "Aviso anticipado",
+        "description": "Reserva con al menos 48 horas de anticipación para disponibilidad garantizada"
+      },
+      "firstTime": {
+        "title": "Clientes nuevos",
+        "description": "Encuentro gratuito antes de tu primera reserva para asegurar la compatibilidad perfecta"
+      },
+      "serviceArea": {
+        "title": "Área de servicio",
+        "description": "Disponible en toda Gran Canaria - Las Palmas, Maspalomas y más"
+      }
+    },
+    "payment": "Pago: Pago online seguro vía Stripe. Se aceptan todas las tarjetas de crédito y débito principales.",
+    "cancellation": "Cancelación: Cancelación gratuita hasta 48 horas antes de tu reserva. Consulta los términos completos durante el proceso de reserva."
+  },
+  "testimonials": {
+    "title": "Lo que dicen mis clientes",
+    "subtitle": "No solo confíes en mi palabra. Esto es lo que dicen los clientes de toda Gran Canaria sobre su experiencia.",
+    "socialProof": "Confianza de más de 50 clientes en Gran Canaria",
+    "cta": "¿Listo para experimentar la misma tranquilidad?",
+    "reviews": {
+      "maria": {
+        "name": "María S.",
+        "location": "Las Palmas",
+        "date": "Diciembre 2025",
+        "service": "Cuidado de mascotas - 2 perros",
+        "text": "Dejamos a nuestros dos perros, Max y Luna, durante dos semanas mientras visitábamos a la familia en Madrid. Las actualizaciones diarias con fotos fueron maravillosas, y los perros estaban tan felices y bien cuidados. ¡No podríamos haber pedido un mejor cuidado!"
+      },
+      "thomas": {
+        "name": "Thomas K.",
+        "location": "Maspalomas",
+        "date": "Noviembre 2025",
+        "service": "Cuidado de casa",
+        "text": "Como expatriado que viaja frecuentemente por trabajo, encontrar un cuidador de casas confiable en Gran Canaria era esencial. Mi casa y jardín siempre están en perfectas condiciones cuando regreso. Servicio altamente profesional."
+      },
+      "elena": {
+        "name": "Elena R.",
+        "location": "Playa del Inglés",
+        "date": "Octubre 2025",
+        "service": "Cuidado de mascotas - Gato",
+        "text": "Nuestra gata Mimi puede ser bastante particular, pero estaba completamente tranquila. El encuentro previo marcó toda la diferencia. Recibimos actualizaciones todos los días y pudimos disfrutar de nuestras vacaciones sin preocupaciones."
+      },
+      "peter": {
+        "name": "Peter y Anna M.",
+        "location": "Telde",
+        "date": "Septiembre 2025",
+        "service": "Ambos - Perro",
+        "text": "Necesitábamos tanto cuidado de mascotas para nuestro perro anciano como cuidado de casa mientras estábamos fuera por un mes. Todo se manejó perfectamente - plantas regadas, correo recogido, y nuestro dulce Bruno fue tratado como familia."
+      },
+      "sarah": {
+        "name": "Sarah L.",
+        "location": "Las Palmas",
+        "date": "Enero 2026",
+        "service": "Cuidado de mascotas - 3 gatos",
+        "text": "Precios transparentes, excelente comunicación y amor genuino por los animales. Mis tres gatos rescatados estuvieron en manos maravillosas. Ya he reservado para mi próximo viaje. ¡Absolutamente recomendado!"
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "¿Tienes preguntas? Encuentra respuestas a las preguntas más comunes sobre servicios de cuidado de casas y mascotas en Gran Canaria.",
+    "stillHaveQuestions": "¿Todavía tienes preguntas? Contáctame directamente y estaré encantado de ayudar.",
+    "categories": {
+      "general": "Servicios generales",
+      "booking": "Reservas y disponibilidad",
+      "petCare": "Cuidado de mascotas",
+      "houseCare": "Cuidado de casa",
+      "granCanaria": "Específico de Gran Canaria"
+    },
+    "questions": {
+      "services": {
+        "q": "¿Qué servicios ofreces?",
+        "a": "Ofrezco servicios completos de cuidado de mascotas y casas incluyendo alimentación diaria, paseos de perros, administración de medicamentos, revisiones de seguridad de la casa, riego de plantas, recogida de correo y actualizaciones con fotos/videos. Los servicios pueden personalizarse según tus necesidades específicas."
+      },
+      "experience": {
+        "q": "¿Cuánto tiempo llevas cuidando mascotas y casas?",
+        "a": "He estado proporcionando servicios profesionales de cuidado de mascotas y casas en Gran Canaria durante más de 5 años. Durante este tiempo, he cuidado cientos de mascotas y hogares, construyendo una reputación de confiabilidad y cuidado genuino."
+      },
+      "insurance": {
+        "q": "¿Estás asegurado?",
+        "a": "Sí, tengo seguro de responsabilidad civil completo que cubre tanto el cuidado de mascotas como los servicios de cuidado de casas. Esto te da tranquilidad sabiendo que estás protegido en el improbable caso de cualquier incidente."
+      },
+      "references": {
+        "q": "¿Tienes referencias?",
+        "a": "¡Por supuesto! Estoy encantado de proporcionar referencias de clientes anteriores bajo petición. También puedes ver testimonios de familias satisfechas en este sitio web. Muchos de mis clientes son clientes recurrentes que me confían sus mascotas y hogares año tras año."
+      },
+      "advanceBooking": {
+        "q": "¿Con cuánta anticipación debo reservar?",
+        "a": "Recomiendo reservar con al menos 2 semanas de anticipación, especialmente durante las temporadas altas de vacaciones como verano y Navidad. Para solicitudes de último momento, contáctame directamente - haré todo lo posible para acomodar tus necesidades si mi horario lo permite."
+      },
+      "cancellation": {
+        "q": "¿Cuál es tu política de cancelación?",
+        "a": "La cancelación gratuita está disponible hasta 48 horas antes del inicio de tu reserva. Las cancelaciones realizadas con menos de 48 horas de anticipación pueden estar sujetas a un cargo parcial. Consulta los términos completos durante el proceso de reserva."
+      },
+      "rates": {
+        "q": "¿Cuáles son tus tarifas?",
+        "a": "Mi tarifa diaria es de €35 por día, con una tarifa semanal con descuento de €210 por semana (ahorra 15%). Esto incluye todos los servicios estándar. Los servicios adicionales o requisitos especiales pueden incurrir en cargos extra - contáctame para un presupuesto personalizado."
+      },
+      "payment": {
+        "q": "¿Cómo pago por los servicios?",
+        "a": "El pago se recoge de forma segura a través de Stripe cuando reservas a través del calendario online. Se aceptan todas las tarjetas de crédito y débito principales. El pago es requerido en el momento de la reserva para confirmar tu reservación."
+      },
+      "sickPet": {
+        "q": "¿Qué pasa si mi mascota se enferma o se lesiona?",
+        "a": "La salud de tu mascota es mi prioridad principal. Estoy familiarizado con las clínicas veterinarias locales en Gran Canaria y te contactaré inmediatamente si surge cualquier preocupación de salud. Para emergencias, llevaré a tu mascota al veterinario más cercano y te mantendré informado en cada paso."
+      },
+      "medication": {
+        "q": "¿Puedes administrar medicamentos a mascotas?",
+        "a": "Sí, tengo experiencia en administrar medicamentos orales, gotas para los ojos y otros medicamentos rutinarios para mascotas. Por favor proporciona instrucciones detalladas y cualquier suministro necesario. Para necesidades médicas más complejas, hablemos durante nuestro encuentro inicial."
+      },
+      "petTypes": {
+        "q": "¿Cuidas todo tipo de mascotas?",
+        "a": "Cuido perros, gatos y la mayoría de mascotas pequeñas incluyendo conejos, cobayas, pájaros, peces y reptiles. Si tienes una mascota inusual, contáctame para discutir tus necesidades específicas - ¡siempre estoy feliz de aprender!"
+      },
+      "emergencies": {
+        "q": "¿Cómo manejas las emergencias de mascotas?",
+        "a": "Mantengo una lista de contactos de emergencia incluyendo veterinarios locales, hospitales de animales 24 horas y tu contacto de emergencia preferido. Estoy disponible 24/7 durante tu reserva y actuaré rápida y calmadamente en cualquier situación de emergencia."
+      },
+      "houseTasks": {
+        "q": "¿Qué tareas de cuidado de casa están incluidas?",
+        "a": "El cuidado estándar de casa incluye revisiones de seguridad (luces, cerraduras, ventanas), riego de plantas, recogida de correo y paquetes, sacar/meter cubos de basura y monitoreo general de la propiedad. Te alertaré sobre cualquier problema como fugas, alarmas o necesidades de mantenimiento."
+      },
+      "plantsMail": {
+        "q": "¿Regarás mis plantas y recogerás el correo?",
+        "a": "¡Sí! El riego de plantas y la recogida de correo están incluidos en todos los paquetes de cuidado de casa. Solo proporciona instrucciones para tus plantas específicas, y me aseguraré de que todo se mantenga saludable y tu buzón no se desborde."
+      },
+      "securityChecks": {
+        "q": "¿Realizas revisiones de seguridad?",
+        "a": "Absolutamente. Realizo revisiones de seguridad regulares incluyendo verificar que todas las puertas y ventanas estén cerradas, comprobar que los sistemas de alarma funcionen, variar la iluminación para dar apariencia de ocupación, y monitorear cualquier actividad inusual alrededor de tu propiedad."
+      },
+      "areas": {
+        "q": "¿Qué áreas de Gran Canaria sirves?",
+        "a": "Proporciono servicios en toda Gran Canaria incluyendo Las Palmas de Gran Canaria, Maspalomas, Playa del Inglés, Telde, San Bartolomé de Tirajana, Mogán y áreas circundantes. Si tu ubicación no está listada, contáctame para discutir cobertura."
+      },
+      "vets": {
+        "q": "¿Conoces veterinarios locales?",
+        "a": "Sí, tengo relaciones establecidas con varias clínicas veterinarias en Gran Canaria, incluyendo instalaciones de emergencia 24 horas. Puedo recomendar veterinarios de confianza en tu área si es necesario."
+      },
+      "spanish": {
+        "q": "¿Hablas español?",
+        "a": "Sí, hablo inglés y español con fluidez. Esto es particularmente útil para comunicarse con servicios locales, veterinarios y contactos de emergencia en Gran Canaria."
+      },
+      "climate": {
+        "q": "¿Puedes manejar las necesidades climáticas locales para mascotas?",
+        "a": "Absolutamente. Estoy bien versado en el cuidado de mascotas en el clima de Gran Canaria, incluyendo asegurar hidratación adecuada, programar paseos durante las partes más frescas del día, proporcionar sombra y reconocer signos de estrés por calor en mascotas."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacta",
+    "subtitle": "Envíame un mensaje y te responderé lo antes posible.",
+    "responseTime": "Respuesta en 24 horas",
+    "availableForCalls": "Disponible para llamadas después del contacto inicial",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "nameRequired": "Nombre *",
+      "email": "Email",
+      "emailPlaceholder": "tu.email@ejemplo.com",
+      "emailRequired": "Email *",
+      "phone": "Teléfono (opcional)",
+      "phonePlaceholder": "+34 XXX XXX XXX",
+      "message": "Mensaje (opcional)",
+      "messagePlaceholder": "Cuéntame sobre tus necesidades - mascotas, fechas, requisitos especiales...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "successDesc": "Gracias por tu mensaje. Te responderé pronto.",
+      "error": "Error al enviar mensaje",
+      "errorDesc": "Ocurrió un error inesperado. Por favor intenta de nuevo."
+    },
+    "privacy": "Tu información está segura conmigo. Solo la usaré para responder a tu consulta y nunca la compartiré con terceros."
+  },
+  "booking": {
+    "label": "Reserva online",
+    "title": "Reserva tu servicio",
+    "subtitle": "Selecciona tus fechas y completa tu reserva en minutos. Recibirás confirmación instantánea y podrás pagar de forma segura online.",
+    "trust": {
+      "secure": "Reserva segura",
+      "payment": "Paga online vía Stripe",
+      "confirmation": "Confirmación instantánea"
+    },
+    "alternative": "¿Prefieres hacer preguntas primero? Envíame un mensaje y te responderé en 24 horas."
+  },
+  "typeform": {
+    "title": "Contáctame",
+    "subtitle": "¿Cómo puedo ayudarte?",
+    "bookMe": "Reservar",
+    "generalEnquiry": "Consulta general",
+    "bookingFormTitle": "Formulario de reserva",
+    "enquiryFormTitle": "Formulario de consulta general"
+  },
+  "footer": {
+    "about": {
+      "title": "House & Pet Sitter",
+      "description": "Servicios profesionales de cuidado de casas y mascotas en los que puedes confiar. Tu hogar y mascotas están en manos cuidadosas y experimentadas."
+    },
+    "quickLinks": {
+      "title": "Enlaces rápidos"
+    },
+    "contact": {
+      "title": "Contacto",
+      "email": "Email:",
+      "phone": "Teléfono:",
+      "location": "Ubicación:"
+    },
+    "copyright": "© {year} House & Pet Sitter. Todos los derechos reservados.",
+    "legalLinks": "Enlaces legales"
+  },
+  "areas": {
+    "title": "Áreas de servicio",
+    "subtitle": "Cubriendo toda Gran Canaria",
+    "locations": {
+      "lasPalmas": "Las Palmas de Gran Canaria",
+      "maspalomas": "Maspalomas",
+      "playaDelIngles": "Playa del Inglés",
+      "sanAgustin": "San Agustín",
+      "meloneras": "Meloneras",
+      "puertoRico": "Puerto Rico",
+      "mogan": "Mogán",
+      "telde": "Telde",
+      "vecindario": "Vecindario",
+      "aguimes": "Agüimes"
+    }
+  },
+  "book": {
+    "title": "Reserva una consulta",
+    "subtitle": "Programa tu consulta gratuita"
+  },
+  "metadata": {
+    "title": "Cuidador de casas y mascotas | Gran Canaria",
+    "description": "Servicios profesionales de cuidado de casas y mascotas en Gran Canaria. Cuidado confiable, asegurado y experimentado para tu hogar y mascotas."
+  }
+}

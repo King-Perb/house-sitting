@@ -1,0 +1,420 @@
+{
+  "common": {
+    "bookNow": "Jetzt buchen",
+    "contactMe": "Kontaktieren Sie mich",
+    "getInTouch": "Kontakt aufnehmen",
+    "learnMore": "Mehr erfahren",
+    "viewServices": "Services ansehen",
+    "viewMyServices": "Meine Services ansehen",
+    "getStarted": "Loslegen",
+    "viewAll": "Alle ansehen",
+    "readMore": "Weiterlesen",
+    "submit": "Absenden",
+    "sendMessage": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "loading": "Lädt...",
+    "servingGranCanaria": "Für Gran Canaria",
+    "servingGranCanariaSpain": "Für Gran Canaria, Spanien"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "services": "Leistungen",
+    "pricing": "Preise",
+    "howItWorks": "So funktioniert's",
+    "testimonials": "Referenzen",
+    "faq": "Häufige Fragen",
+    "contact": "Kontakt",
+    "book": "Buchen",
+    "mainNavigation": "Hauptnavigation",
+    "mobileNavigation": "Mobile Navigation",
+    "footerNavigation": "Fußzeilennavigation",
+    "openMenu": "Menü öffnen",
+    "navigationMenu": "Navigationsmenü"
+  },
+  "hero": {
+    "titlePart1": "Ihr vertrauenswürdiger Haus- & Tiersitter auf",
+    "titlePart2": "Gran Canaria",
+    "subtitle": "Sorgenfrei verreisen. Professionelle, zuverlässige Betreuung für Ihre geliebten Haustiere und Ihr Zuhause. Für alle Gebiete von Gran Canaria mit persönlicher Aufmerksamkeit und echter Tierliebe.",
+    "tagline": "Vertrauenswürdige Haus- & Tierbetreuung",
+    "taglineSubtitle": "Echte Häuser, glückliche Haustiere und ein Betreuer, der Ihr Zuhause wie sein eigenes behandelt.",
+    "cta": "Kontakt aufnehmen",
+    "secondaryCta": "Services ansehen"
+  },
+  "trustBadges": {
+    "insured": "Vollversichert",
+    "insuredDesc": "Umfassende Haftpflichtversicherung",
+    "background": "Überprüft",
+    "backgroundDesc": "Verifiziert und vertrauenswürdig",
+    "experience": "5+ Jahre Erfahrung",
+    "experienceDesc": "Professioneller Service",
+    "clients": "50+ zufriedene Kunden",
+    "clientsDesc": "Familien vertrauen mir"
+  },
+  "about": {
+    "title": "Lernen Sie Ihren Haus- & Tiersitter kennen",
+    "paragraph1": "Hallo, ich bin hier, um Ihnen Sicherheit zu geben, während Sie weg sind. Mit über 5 Jahren Erfahrung in der Betreuung von Haustieren und Häusern auf Gran Canaria verstehe ich, dass Ihre Haustiere Familie sind und Ihr Zuhause Ihr Rückzugsort ist.",
+    "paragraph2": "Mein Weg zur Haus- und Tierbetreuung begann mit einer tiefen Liebe zu Tieren und dem aufrichtigen Wunsch, Tierbesitzern sorgenfreies Reisen zu ermöglichen. Ob tägliche Spaziergänge, Medikamentengabe oder einfach Gesellschaft leisten – ich behandle jedes Tier, als wäre es mein eigenes.",
+    "paragraph3": "Mit Sitz auf Gran Canaria betreue ich alle Gebiete einschließlich Las Palmas, Maspalomas, Playa del Inglés und umliegende Gemeinden. Ich kenne die örtlichen Tierärzte, tierfreundliche Parks und alles, was Ihr Haustier brauchen könnte.",
+    "credentials": {
+      "experience": "5+ Jahre Erfahrung",
+      "experienceDesc": "Betreuung von Haustieren und Häusern",
+      "insured": "Vollversichert",
+      "insuredDesc": "Umfassende Haftpflichtversicherung",
+      "background": "Überprüft",
+      "backgroundDesc": "Verifiziert und vertrauenswürdig",
+      "firstAid": "Erste-Hilfe-Zertifikat für Tiere",
+      "firstAidDesc": "Notfallbereitschaft"
+    },
+    "carousel": {
+      "previous": "Vorheriges Foto",
+      "next": "Nächstes Foto",
+      "showPhoto": "Foto {number} anzeigen"
+    }
+  },
+  "services": {
+    "title": "Maßgeschneiderte Services",
+    "subtitle": "Ob Sie Tierbetreuung, Hausbetreuung oder beides benötigen – ich biete flexible Leistungen für vollkommene Sicherheit, während Sie von Ihrem Zuhause auf Gran Canaria weg sind.",
+    "whatsIncluded": "Inklusive:",
+    "petCare": {
+      "title": "Tierbetreuung",
+      "description": "Umfassende Betreuung für Ihre geliebten Haustiere, damit sie glücklich, gesund und wohl sind, während Sie weg sind.",
+      "items": {
+        "feeding": "Tägliche Fütterung und frisches Wasser",
+        "walks": "Regelmäßige Spaziergänge und Bewegung",
+        "medication": "Medikamentengabe",
+        "playtime": "Spielzeit und Gesellschaft",
+        "overnight": "Übernachtungen möglich",
+        "updates": "Tägliche Foto- und Video-Updates"
+      }
+    },
+    "houseCare": {
+      "title": "Hausbetreuung",
+      "description": "Halten Sie Ihr Zuhause sicher und gepflegt mit regelmäßigen Kontrollen und aufmerksamer Objektbetreuung.",
+      "items": {
+        "security": "Tägliche Sicherheitskontrollen",
+        "mail": "Post- und Paketannahme",
+        "plants": "Pflanzenpflege und Gießen",
+        "lighting": "Licht- und Jalousiensteuerung",
+        "ventilation": "Lüftungs- und Temperaturüberwachung",
+        "emergency": "Notfall-Erreichbarkeit"
+      }
+    },
+    "additional": {
+      "title": "Zusätzliche Leistungen",
+      "description": "Zusatzservices für noch mehr Sorglosigkeit während Ihrer Abwesenheit. Stellen Sie Ihr Betreuungspaket nach Ihren Wünschen zusammen.",
+      "items": {
+        "garden": "Gartenpflege",
+        "pool": "Pool- und Spa-Überwachung",
+        "grocery": "Einkauf vor Ihrer Ankunft",
+        "transport": "Tiertransport zum Tierarzt/Groomer",
+        "keys": "Schlüsselverwahrung und Zugangsmanagement",
+        "custom": "Individuelle Wünsche willkommen"
+      }
+    },
+    "serviceArea": {
+      "title": "Servicegebiet",
+      "description": "Ich biete Haus- und Tierbetreuung in ganz Gran Canaria an, einschließlich:",
+      "notListed": "Ihr Gebiet nicht aufgeführt? Kontaktieren Sie mich, um die Abdeckung in anderen Teilen von Gran Canaria zu besprechen."
+    }
+  },
+  "pricing": {
+    "title": "Transparente Preise",
+    "subtitle": "Keine versteckten Gebühren, keine Überraschungen. Nur ehrliche, klare Preise für qualitativ hochwertige Haus- und Tierbetreuung auf Gran Canaria.",
+    "daily": {
+      "name": "Tagespreis",
+      "price": "€35",
+      "period": "pro Tag",
+      "description": "Perfekt für Kurzreisen und Wochenendausflüge"
+    },
+    "weekly": {
+      "name": "Wochenpreis",
+      "price": "€210",
+      "period": "pro Woche",
+      "description": "Sparen Sie €35 mit unserem Wochenpaket",
+      "badge": "15% sparen"
+    },
+    "included": {
+      "title": "Inklusive",
+      "items": {
+        "visits": "Tägliche Besuche (1-2 mal pro Tag)",
+        "feeding": "Tierfütterung, Wasser & Medikamente",
+        "walking": "Hunde-Spaziergänge & Bewegung",
+        "security": "Haus-Sicherheitskontrollen",
+        "plants": "Pflanzenpflege & Gartenpflege",
+        "mail": "Post- & Paketannahme",
+        "updates": "Foto- & Video-Updates",
+        "emergency": "24/7 Notfall-Kontakt"
+      }
+    },
+    "terms": {
+      "payment": {
+        "title": "Einfache Online-Zahlung",
+        "description": "Sichere Zahlung via Stripe bei Buchung über Calendly"
+      },
+      "booking": {
+        "title": "Flexible Buchung",
+        "description": "Buchen Sie mindestens 48 Stunden im Voraus für garantierte Verfügbarkeit"
+      },
+      "cancellation": {
+        "title": "Stornierungsrichtlinie",
+        "description": "Kostenlose Stornierung bis 48 Stunden vor Buchungsbeginn"
+      }
+    },
+    "additionalNote": "Benötigen Sie etwas Besonderes? Zusätzliche Leistungen wie verlängerte Übernachtungen, mehrere Haustiere oder spezielle Anforderungen können berücksichtigt werden. Kontaktieren Sie mich für ein individuelles Angebot."
+  },
+  "howItWorks": {
+    "title": "So funktioniert's",
+    "subtitle": "Die Buchung Ihres Haus- und Tiersitters ist einfach. Nur drei einfache Schritte und Sie können sorgenfrei verreisen.",
+    "step1": {
+      "title": "Termin buchen",
+      "description": "Wählen Sie Ihre gewünschten Termine über den Online-Buchungskalender. Sehen Sie die Verfügbarkeit in Echtzeit und wählen Sie, was am besten für Ihren Zeitplan passt.",
+      "note": "Powered by Calendly"
+    },
+    "step2": {
+      "title": "Details angeben",
+      "description": "Erzählen Sie mir von Ihren Haustieren, Ihrem Zuhause und besonderen Anforderungen. Das Buchungsformular erfasst alles, was ich für die beste Betreuung benötige.",
+      "note": "Individuelles Aufnahmeformular"
+    },
+    "step3": {
+      "title": "Bezahlen & Bestätigen",
+      "description": "Schließen Sie die sichere Zahlung via Stripe ab und erhalten Sie sofortige Bestätigung. Ihre Buchung ist gesichert, sobald die Zahlung verarbeitet ist.",
+      "note": "Sofortige Bestätigung"
+    },
+    "goodToKnow": {
+      "title": "Gut zu wissen",
+      "advanceNotice": {
+        "title": "Vorlaufzeit",
+        "description": "Buchen Sie mindestens 48 Stunden im Voraus für garantierte Verfügbarkeit"
+      },
+      "firstTime": {
+        "title": "Erstkunden",
+        "description": "Kostenloses Kennenlernen vor Ihrer ersten Buchung für eine perfekte Abstimmung"
+      },
+      "serviceArea": {
+        "title": "Servicegebiet",
+        "description": "Verfügbar in ganz Gran Canaria – Las Palmas, Maspalomas und mehr"
+      }
+    },
+    "payment": "Zahlung: Sichere Online-Zahlung via Stripe. Alle gängigen Kredit- und Debitkarten werden akzeptiert.",
+    "cancellation": "Stornierung: Kostenlose Stornierung bis 48 Stunden vor Ihrer Buchung. Vollständige Bedingungen beim Checkout."
+  },
+  "testimonials": {
+    "title": "Was meine Kunden sagen",
+    "subtitle": "Verlassen Sie sich nicht nur auf mein Wort. Hier ist, was Kunden aus ganz Gran Canaria über ihre Erfahrung sagen.",
+    "socialProof": "Vertraut von über 50 Kunden auf Gran Canaria",
+    "cta": "Bereit für die gleiche Sorglosigkeit?",
+    "reviews": {
+      "maria": {
+        "name": "Maria S.",
+        "location": "Las Palmas",
+        "date": "Dezember 2025",
+        "service": "Tierbetreuung - 2 Hunde",
+        "text": "Wir haben unsere zwei Hunde, Max und Luna, für zwei Wochen gelassen, während wir Familie in Madrid besuchten. Die täglichen Foto-Updates waren wunderbar, und die Hunde waren so glücklich und gut versorgt. Wir hätten uns keine bessere Betreuung wünschen können!"
+      },
+      "thomas": {
+        "name": "Thomas K.",
+        "location": "Maspalomas",
+        "date": "November 2025",
+        "service": "Hausbetreuung",
+        "text": "Als Expat, der häufig beruflich reist, war es wichtig, eine zuverlässige Hausbetreuung auf Gran Canaria zu finden. Mein Haus und Garten sind immer in perfektem Zustand, wenn ich zurückkomme. Hochprofessioneller Service."
+      },
+      "elena": {
+        "name": "Elena R.",
+        "location": "Playa del Inglés",
+        "date": "Oktober 2025",
+        "service": "Tierbetreuung - Katze",
+        "text": "Unsere Katze Mimi kann ziemlich wählerisch sein, aber sie war völlig entspannt. Das vorherige Kennenlernen hat den Unterschied gemacht. Wir haben jeden Tag Updates bekommen und konnten unseren Urlaub sorgenfrei genießen."
+      },
+      "peter": {
+        "name": "Peter & Anna M.",
+        "location": "Telde",
+        "date": "September 2025",
+        "service": "Beides - Hund",
+        "text": "Wir brauchten sowohl Tierbetreuung für unseren älteren Hund als auch Hausbetreuung, während wir einen Monat weg waren. Alles wurde perfekt erledigt – Pflanzen gegossen, Post gesammelt, und unser süßer Bruno wurde wie Familie behandelt."
+      },
+      "sarah": {
+        "name": "Sarah L.",
+        "location": "Las Palmas",
+        "date": "Januar 2026",
+        "service": "Tierbetreuung - 3 Katzen",
+        "text": "Transparente Preise, ausgezeichnete Kommunikation und echte Tierliebe. Meine drei Rettungskatzen waren in wunderbaren Händen. Ich habe bereits für meine nächste Reise gebucht. Absolut empfehlenswert!"
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Haben Sie Fragen? Finden Sie Antworten auf die häufigsten Fragen zur Haus- und Tierbetreuung auf Gran Canaria.",
+    "stillHaveQuestions": "Noch Fragen? Kontaktieren Sie mich direkt und ich helfe Ihnen gerne weiter.",
+    "categories": {
+      "general": "Allgemeine Services",
+      "booking": "Buchung & Verfügbarkeit",
+      "petCare": "Tierbetreuung",
+      "houseCare": "Hausbetreuung",
+      "granCanaria": "Gran Canaria spezifisch"
+    },
+    "questions": {
+      "services": {
+        "q": "Welche Services bieten Sie an?",
+        "a": "Ich biete umfassende Tier- und Hausbetreuung an, einschließlich täglicher Fütterung, Hunde-Spaziergänge, Medikamentengabe, Haus-Sicherheitskontrollen, Pflanzenpflege, Postannahme und Foto-/Video-Updates. Services können an Ihre spezifischen Bedürfnisse angepasst werden."
+      },
+      "experience": {
+        "q": "Wie lange betreuen Sie schon Haustiere und Häuser?",
+        "a": "Ich biete seit über 5 Jahren professionelle Haus- und Tierbetreuung auf Gran Canaria an. In dieser Zeit habe ich Hunderte von Haustieren und Häusern betreut und mir einen Ruf für Zuverlässigkeit und echte Fürsorge aufgebaut."
+      },
+      "insurance": {
+        "q": "Sind Sie versichert?",
+        "a": "Ja, ich habe eine umfassende Haftpflichtversicherung, die sowohl Tierbetreuung als auch Hausbetreuung abdeckt. Das gibt Ihnen Sicherheit, dass Sie im unwahrscheinlichen Fall eines Vorfalls geschützt sind."
+      },
+      "references": {
+        "q": "Haben Sie Referenzen?",
+        "a": "Absolut! Ich stelle gerne Referenzen von früheren Kunden auf Anfrage zur Verfügung. Sie können auch Erfahrungsberichte zufriedener Familien auf dieser Website sehen. Viele meiner Kunden sind Stammkunden, die mir ihre Haustiere und Häuser Jahr für Jahr anvertrauen."
+      },
+      "advanceBooking": {
+        "q": "Wie weit im Voraus sollte ich buchen?",
+        "a": "Ich empfehle, mindestens 2 Wochen im Voraus zu buchen, besonders während der Haupturlaubszeiten wie Sommer und Weihnachten. Für kurzfristige Anfragen kontaktieren Sie mich bitte direkt – ich werde mein Bestes tun, Ihre Bedürfnisse zu erfüllen, wenn mein Zeitplan es erlaubt."
+      },
+      "cancellation": {
+        "q": "Was sind Ihre Stornierungsbedingungen?",
+        "a": "Kostenlose Stornierung ist bis 48 Stunden vor Buchungsbeginn möglich. Stornierungen mit weniger als 48 Stunden Vorlauf können teilweise berechnet werden. Bitte sehen Sie die vollständigen Bedingungen während des Buchungsprozesses."
+      },
+      "rates": {
+        "q": "Was sind Ihre Preise?",
+        "a": "Mein Tagespreis beträgt €35 pro Tag, mit einem ermäßigten Wochenpreis von €210 pro Woche (15% sparen). Dies beinhaltet alle Standardleistungen. Zusätzliche Services oder spezielle Anforderungen können extra berechnet werden – kontaktieren Sie mich für ein individuelles Angebot."
+      },
+      "payment": {
+        "q": "Wie bezahle ich für die Services?",
+        "a": "Die Zahlung wird sicher über Stripe eingezogen, wenn Sie über den Online-Kalender buchen. Alle gängigen Kredit- und Debitkarten werden akzeptiert. Die Zahlung ist zum Zeitpunkt der Buchung erforderlich, um Ihre Reservierung zu bestätigen."
+      },
+      "sickPet": {
+        "q": "Was passiert, wenn mein Haustier krank wird oder sich verletzt?",
+        "a": "Die Gesundheit Ihres Haustieres hat höchste Priorität. Ich kenne die örtlichen Tierkliniken auf Gran Canaria und werde Sie sofort kontaktieren, wenn gesundheitliche Bedenken auftreten. Bei Notfällen bringe ich Ihr Haustier zum nächsten Tierarzt und halte Sie bei jedem Schritt auf dem Laufenden."
+      },
+      "medication": {
+        "q": "Können Sie Haustieren Medikamente verabreichen?",
+        "a": "Ja, ich habe Erfahrung mit der Verabreichung von oralen Medikamenten, Augentropfen und anderen routinemäßigen Tiermedikamenten. Bitte geben Sie detaillierte Anweisungen und alle notwendigen Materialien. Für komplexere medizinische Bedürfnisse besprechen wir das beim Kennenlernen."
+      },
+      "petTypes": {
+        "q": "Betreuen Sie alle Arten von Haustieren?",
+        "a": "Ich betreue Hunde, Katzen und die meisten kleinen Haustiere einschließlich Kaninchen, Meerschweinchen, Vögel, Fische und Reptilien. Wenn Sie ein ungewöhnliches Haustier haben, kontaktieren Sie mich, um Ihre spezifischen Bedürfnisse zu besprechen – ich lerne immer gerne dazu!"
+      },
+      "emergencies": {
+        "q": "Wie gehen Sie mit Notfällen bei Haustieren um?",
+        "a": "Ich führe eine Liste mit Notfallkontakten einschließlich örtlicher Tierärzte, 24-Stunden-Tierkliniken und Ihrem bevorzugten Notfallkontakt. Ich bin während Ihrer Buchung rund um die Uhr erreichbar und werde in jeder Notfallsituation schnell und ruhig handeln."
+      },
+      "houseTasks": {
+        "q": "Welche Hausbetreuungsaufgaben sind enthalten?",
+        "a": "Standard-Hausbetreuung umfasst Sicherheitskontrollen (Lichter, Schlösser, Fenster), Pflanzenpflege, Post- und Paketannahme, Mülltonnendienst und allgemeine Objektüberwachung. Ich werde Sie über alle Probleme wie Lecks, Alarme oder Wartungsbedarf informieren."
+      },
+      "plantsMail": {
+        "q": "Werden Sie meine Pflanzen gießen und Post sammeln?",
+        "a": "Ja! Pflanzenpflege und Postannahme sind in allen Hausbetreuungspaketen enthalten. Geben Sie einfach Anweisungen für Ihre spezifischen Pflanzen, und ich stelle sicher, dass alles gesund bleibt und Ihr Briefkasten nicht überläuft."
+      },
+      "securityChecks": {
+        "q": "Führen Sie Sicherheitskontrollen durch?",
+        "a": "Absolut. Ich führe regelmäßige Sicherheitskontrollen durch, einschließlich der Überprüfung, dass alle Türen und Fenster verschlossen sind, dass Alarmsysteme funktionieren, variiere die Beleuchtung für einen bewohnten Eindruck und überwache ungewöhnliche Aktivitäten rund um Ihr Objekt."
+      },
+      "areas": {
+        "q": "Welche Gebiete von Gran Canaria bedienen Sie?",
+        "a": "Ich biete Services in ganz Gran Canaria an, einschließlich Las Palmas de Gran Canaria, Maspalomas, Playa del Inglés, Telde, San Bartolomé de Tirajana, Mogán und umliegenden Gebieten. Wenn Ihr Standort nicht aufgeführt ist, kontaktieren Sie mich, um die Abdeckung zu besprechen."
+      },
+      "vets": {
+        "q": "Kennen Sie lokale Tierärzte?",
+        "a": "Ja, ich habe etablierte Beziehungen zu mehreren Tierkliniken auf Gran Canaria, einschließlich 24-Stunden-Notfalleinrichtungen. Ich kann bei Bedarf vertrauenswürdige Tierärzte in Ihrer Gegend empfehlen."
+      },
+      "spanish": {
+        "q": "Sprechen Sie Spanisch?",
+        "a": "Ja, ich spreche fließend Englisch und Spanisch. Das ist besonders hilfreich für die Kommunikation mit lokalen Services, Tierärzten und Notfallkontakten auf Gran Canaria."
+      },
+      "climate": {
+        "q": "Können Sie mit den lokalen Klimabedürfnissen für Haustiere umgehen?",
+        "a": "Absolut. Ich bin gut vertraut mit der Betreuung von Haustieren im Klima von Gran Canaria, einschließlich ausreichender Hydratation, Planung von Spaziergängen während kühlerer Tageszeiten, Bereitstellung von Schatten und Erkennung von Anzeichen von Hitzestress bei Haustieren."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Senden Sie mir eine Nachricht und ich werde mich so schnell wie möglich bei Ihnen melden.",
+    "responseTime": "Antwort innerhalb von 24 Stunden",
+    "availableForCalls": "Nach erstem Kontakt für Anrufe verfügbar",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "nameRequired": "Name *",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre.email@beispiel.com",
+      "emailRequired": "E-Mail *",
+      "phone": "Telefon (optional)",
+      "phonePlaceholder": "+34 XXX XXX XXX",
+      "message": "Nachricht (optional)",
+      "messagePlaceholder": "Erzählen Sie mir von Ihren Bedürfnissen – Haustiere, Termine, besondere Anforderungen...",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet!",
+      "successDesc": "Vielen Dank für Ihre Nachricht. Ich werde mich bald bei Ihnen melden.",
+      "error": "Nachricht konnte nicht gesendet werden",
+      "errorDesc": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "privacy": "Ihre Daten sind bei mir sicher. Ich werde sie nur verwenden, um auf Ihre Anfrage zu antworten, und sie niemals an Dritte weitergeben."
+  },
+  "booking": {
+    "label": "Online-Buchung",
+    "title": "Buchen Sie Ihren Service",
+    "subtitle": "Wählen Sie Ihre Termine und schließen Sie Ihre Buchung in Minuten ab. Sie erhalten sofortige Bestätigung und können sicher online bezahlen.",
+    "trust": {
+      "secure": "Sichere Buchung",
+      "payment": "Online-Zahlung via Stripe",
+      "confirmation": "Sofortige Bestätigung"
+    },
+    "alternative": "Möchten Sie erst Fragen stellen? Senden Sie mir eine Nachricht und ich antworte innerhalb von 24 Stunden."
+  },
+  "typeform": {
+    "title": "Kontaktieren Sie mich",
+    "subtitle": "Wie kann ich Ihnen helfen?",
+    "bookMe": "Buchen",
+    "generalEnquiry": "Allgemeine Anfrage",
+    "bookingFormTitle": "Buchungsanfrage-Formular",
+    "enquiryFormTitle": "Allgemeines Anfrage-Formular"
+  },
+  "footer": {
+    "about": {
+      "title": "House & Pet Sitter",
+      "description": "Professionelle Haus- und Tierbetreuung, der Sie vertrauen können. Ihr Zuhause und Ihre Haustiere sind in fürsorglichen, erfahrenen Händen."
+    },
+    "quickLinks": {
+      "title": "Schnelllinks"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "E-Mail:",
+      "phone": "Telefon:",
+      "location": "Standort:"
+    },
+    "copyright": "© {year} House & Pet Sitter. Alle Rechte vorbehalten.",
+    "legalLinks": "Rechtliche Links"
+  },
+  "areas": {
+    "title": "Servicegebiete",
+    "subtitle": "Ganz Gran Canaria abdeckend",
+    "locations": {
+      "lasPalmas": "Las Palmas de Gran Canaria",
+      "maspalomas": "Maspalomas",
+      "playaDelIngles": "Playa del Inglés",
+      "sanAgustin": "San Agustín",
+      "meloneras": "Meloneras",
+      "puertoRico": "Puerto Rico",
+      "mogan": "Mogán",
+      "telde": "Telde",
+      "vecindario": "Vecindario",
+      "aguimes": "Agüimes"
+    }
+  },
+  "book": {
+    "title": "Beratung buchen",
+    "subtitle": "Vereinbaren Sie Ihre kostenlose Beratung"
+  },
+  "metadata": {
+    "title": "Haus- & Tiersitter | Gran Canaria",
+    "description": "Professionelle Haus- und Tierbetreuung auf Gran Canaria. Vertrauenswürdige, versicherte und erfahrene Betreuung für Ihr Zuhause und Ihre Haustiere."
+  }
+}

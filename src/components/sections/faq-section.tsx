@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import {
   Accordion,
   AccordionContent,
@@ -6,8 +7,43 @@ import {
 } from "@/components/ui/accordion";
 import { faqData, generateFAQSchema } from "@/lib/data/faq-data";
 
-export function FAQSection() {
-  const faqSchema = generateFAQSchema(faqData);
+export async function FAQSection() {
+  const t = await getTranslations("faq");
+  const tCommon = await getTranslations("common");
+
+  // Map FAQ IDs to translation keys
+  const faqKeyMap: Record<string, string> = {
+    "services-offered": "services",
+    "experience": "experience",
+    "insurance": "insurance",
+    "references": "references",
+    "booking-advance": "advanceBooking",
+    "cancellation": "cancellation",
+    "rates": "rates",
+    "payment": "payment",
+    "pet-sick": "sickPet",
+    "medication": "medication",
+    "pet-types": "petTypes",
+    "emergencies": "emergencies",
+    "house-tasks": "houseTasks",
+    "plants-mail": "plantsMail",
+    "security": "securityChecks",
+    "service-areas": "areas",
+    "local-vets": "vets",
+    "languages": "spanish",
+    "climate": "climate",
+  };
+
+  const translatedFaqs = faqData.map((faq) => {
+    const key = faqKeyMap[faq.id] || faq.id;
+    return {
+      ...faq,
+      question: t(`questions.${key}.q`),
+      answer: t(`questions.${key}.a`),
+    };
+  });
+
+  const faqSchema = generateFAQSchema(translatedFaqs);
 
   return (
     <section
@@ -28,18 +64,17 @@ export function FAQSection() {
             id="faq-heading"
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Frequently Asked Questions
+            {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions? Find answers to the most common questions about
-            house and pet sitting services in Gran Canaria.
+            {t("subtitle")}
           </p>
         </div>
 
         {/* FAQ Accordion */}
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
-            {faqData.map((faq) => (
+            {translatedFaqs.map((faq) => (
               <AccordionItem key={faq.id} value={faq.id}>
                 <AccordionTrigger className="text-left">
                   {faq.question}
@@ -55,14 +90,13 @@ export function FAQSection() {
         {/* Additional Help CTA */}
         <div className="mt-12 text-center">
           <p className="text-muted-foreground">
-            Still have questions?{" "}
+            {t("stillHaveQuestions")}{" "}
             <a
               href="#contact"
               className="text-primary font-medium hover:underline"
             >
-              Contact me directly
-            </a>{" "}
-            and I&apos;ll be happy to help.
+              {tCommon("contactMe")}
+            </a>
           </p>
         </div>
       </div>

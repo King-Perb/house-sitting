@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,6 +23,8 @@ interface MobileNavProps {
 
 export function MobileNav({ navLinks }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("nav");
+  const tCommon = useTranslations("common");
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -30,16 +33,19 @@ export function MobileNav({ navLinks }: MobileNavProps) {
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Open menu">
+        <Button variant="ghost" size="icon" aria-label={t("openMenu")}>
           <Menu className="h-6 w-6" />
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="w-[280px] sm:w-[320px] p-0">
         <div className="flex flex-col h-full">
           <SheetHeader className="sr-only">
-            <SheetTitle>Navigation menu</SheetTitle>
+            <SheetTitle>{t("navigationMenu")}</SheetTitle>
           </SheetHeader>
-          <nav className="flex flex-col px-4 py-8" aria-label="Mobile navigation">
+          <nav
+            className="flex flex-col px-4 py-8"
+            aria-label={t("mobileNavigation")}
+          >
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -53,7 +59,7 @@ export function MobileNav({ navLinks }: MobileNavProps) {
             <div className="pt-4 px-4">
               <Button asChild className="w-full" size="lg">
                 <a href="#contact" onClick={handleLinkClick}>
-                  Get in Touch
+                  {tCommon("getInTouch")}
                 </a>
               </Button>
             </div>

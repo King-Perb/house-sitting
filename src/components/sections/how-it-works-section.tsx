@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { Calendar, ClipboardList, CreditCard, Clock, CheckCircle, Info } from "lucide-react";
 import {
   Card,
@@ -7,65 +8,26 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const steps = [
-  {
-    number: 1,
-    icon: Calendar,
-    title: "Book a Time",
-    description:
-      "Select your preferred dates using the online booking calendar. See real-time availability and choose what works best for your schedule.",
-    note: "Powered by Calendly",
-  },
-  {
-    number: 2,
-    icon: ClipboardList,
-    title: "Provide Details",
-    description:
-      "Tell me about your pets, home, and any special requirements. The booking form captures everything I need to provide the best care.",
-    note: "Custom intake form",
-  },
-  {
-    number: 3,
-    icon: CreditCard,
-    title: "Pay & Confirm",
-    description:
-      "Complete secure payment via Stripe and receive instant confirmation. Your booking is secured once payment is processed.",
-    note: "Instant confirmation",
-  },
-];
-
-const importantInfo = [
-  {
-    icon: Clock,
-    title: "Advance Notice",
-    description: "Book at least 48 hours in advance for guaranteed availability",
-  },
-  {
-    icon: CheckCircle,
-    title: "First-Time Clients",
-    description: "Free meet-and-greet before your first booking to ensure a perfect fit",
-  },
-  {
-    icon: Info,
-    title: "Service Area",
-    description: "Available throughout Gran Canaria - Las Palmas, Maspalomas, and more",
-  },
-];
-
 function StepCard({
-  step,
+  number,
+  icon: Icon,
+  title,
+  description,
+  note,
   isLast,
 }: {
-  readonly step: (typeof steps)[0];
+  readonly number: number;
+  readonly icon: typeof Calendar;
+  readonly title: string;
+  readonly description: string;
+  readonly note: string;
   readonly isLast: boolean;
 }) {
-  const Icon = step.icon;
-
   return (
     <div className="relative flex flex-col items-center">
       {/* Step Number Badge */}
       <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm z-10">
-        {step.number}
+        {number}
       </div>
 
       <Card className="h-full w-full pt-6 border border-primary/10 bg-background/90 shadow-sm">
@@ -73,12 +35,12 @@ function StepCard({
           <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
             <Icon className="h-7 w-7 text-primary" />
           </div>
-          <CardTitle className="text-xl">{step.title}</CardTitle>
-          <CardDescription className="text-sm">{step.description}</CardDescription>
+          <CardTitle className="text-xl">{title}</CardTitle>
+          <CardDescription className="text-sm">{description}</CardDescription>
         </CardHeader>
         <CardContent className="text-center">
           <span className="inline-block px-3 py-1 bg-muted rounded-full text-xs text-muted-foreground">
-            {step.note}
+            {note}
           </span>
         </CardContent>
       </Card>
@@ -104,7 +66,51 @@ function StepCard({
   );
 }
 
-export function HowItWorksSection() {
+export async function HowItWorksSection() {
+  const t = await getTranslations("howItWorks");
+
+  const steps = [
+    {
+      number: 1,
+      icon: Calendar,
+      title: t("step1.title"),
+      description: t("step1.description"),
+      note: t("step1.note"),
+    },
+    {
+      number: 2,
+      icon: ClipboardList,
+      title: t("step2.title"),
+      description: t("step2.description"),
+      note: t("step2.note"),
+    },
+    {
+      number: 3,
+      icon: CreditCard,
+      title: t("step3.title"),
+      description: t("step3.description"),
+      note: t("step3.note"),
+    },
+  ];
+
+  const importantInfo = [
+    {
+      icon: Clock,
+      title: t("goodToKnow.advanceNotice.title"),
+      description: t("goodToKnow.advanceNotice.description"),
+    },
+    {
+      icon: CheckCircle,
+      title: t("goodToKnow.firstTime.title"),
+      description: t("goodToKnow.firstTime.description"),
+    },
+    {
+      icon: Info,
+      title: t("goodToKnow.serviceArea.title"),
+      description: t("goodToKnow.serviceArea.description"),
+    },
+  ];
+
   return (
     <section
       id="how-it-works"
@@ -118,25 +124,32 @@ export function HowItWorksSection() {
             id="how-it-works-heading"
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            How It Works
+            {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Booking your house and pet sitter is simple. Just three easy steps
-            and you&apos;ll have peace of mind while you&apos;re away.
+            {t("subtitle")}
           </p>
         </div>
 
         {/* 3-Step Process */}
         <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto mb-16 pt-4">
           {steps.map((step, index) => (
-            <StepCard key={step.number} step={step} isLast={index === steps.length - 1} />
+            <StepCard
+              key={step.number}
+              number={step.number}
+              icon={step.icon}
+              title={step.title}
+              description={step.description}
+              note={step.note}
+              isLast={index === steps.length - 1}
+            />
           ))}
         </div>
 
         {/* Important Information */}
         <div className="bg-background/95 rounded-xl p-8 border border-primary/10 shadow-sm">
           <h3 className="text-xl font-semibold mb-6 text-center">
-            Good to Know
+            {t("goodToKnow.title")}
           </h3>
           <div className="grid gap-6 sm:grid-cols-3">
             {importantInfo.map((info) => {
@@ -160,13 +173,8 @@ export function HowItWorksSection() {
 
         {/* Payment & Cancellation Info */}
         <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>
-            <strong>Payment:</strong> Secure online payment via Stripe. All major credit and debit cards accepted.
-          </p>
-          <p className="mt-2">
-            <strong>Cancellation:</strong> Free cancellation up to 48 hours before your booking.
-            See full terms during checkout.
-          </p>
+          <p>{t("payment")}</p>
+          <p className="mt-2">{t("cancellation")}</p>
         </div>
       </div>
     </section>

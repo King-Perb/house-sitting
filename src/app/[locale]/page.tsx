@@ -22,7 +22,7 @@ const breadcrumbSchema = generateBreadcrumbSchema([
   { name: "Home", url: SITE_URL },
 ]);
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       {/* Page-specific structured data */}

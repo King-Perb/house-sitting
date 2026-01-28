@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import { Shield, BadgeCheck, Award, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -7,28 +8,32 @@ export interface TrustBadge {
   description: string;
 }
 
-export const trustBadges: TrustBadge[] = [
-  {
-    icon: Shield,
-    label: "Fully Insured",
-    description: "Complete liability coverage",
-  },
-  {
-    icon: BadgeCheck,
-    label: "Background Checked",
-    description: "Verified and trusted",
-  },
-  {
-    icon: Award,
-    label: "5+ Years Experience",
-    description: "Professional service",
-  },
-  {
-    icon: Users,
-    label: "50+ Happy Clients",
-    description: "Trusted by families",
-  },
-];
+async function getTrustBadges(): Promise<TrustBadge[]> {
+  const t = await getTranslations("trustBadges");
+
+  return [
+    {
+      icon: Shield,
+      label: t("insured"),
+      description: t("insuredDesc"),
+    },
+    {
+      icon: BadgeCheck,
+      label: t("background"),
+      description: t("backgroundDesc"),
+    },
+    {
+      icon: Award,
+      label: t("experience"),
+      description: t("experienceDesc"),
+    },
+    {
+      icon: Users,
+      label: t("clients"),
+      description: t("clientsDesc"),
+    },
+  ];
+}
 
 interface TrustBadgesProps {
   readonly variant?: "compact" | "expanded";
@@ -36,11 +41,12 @@ interface TrustBadgesProps {
   readonly showAll?: boolean;
 }
 
-export function TrustBadges({
+export async function TrustBadges({
   variant = "compact",
   className,
   showAll = false,
 }: TrustBadgesProps) {
+  const trustBadges = await getTrustBadges();
   // In compact mode, show only first 3 badges unless showAll is true
   const badgesToShow = showAll ? trustBadges : trustBadges.slice(0, 3);
 

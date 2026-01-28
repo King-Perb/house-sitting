@@ -12,7 +12,10 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(ls:*)",
       "Bash(npm run lint:*)",
-      "Bash(npx eslint .)"
+      "Bash(npx eslint .)",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path ''[locale]''; Move-Item -Path ''page.tsx'' -Destination ''[locale]/''; Move-Item -Path ''book'' -Destination ''[locale]/'' -Force; Move-Item -Path ''areas'' -Destination ''[locale]/'' -Force\")",
+      "Bash(powershell -Command:*)",
+      "Bash(npx shadcn@latest add:*)"
     ]
   }
 }

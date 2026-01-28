@@ -1,32 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Shield, BadgeCheck, Clock, Heart, ChevronLeft, ChevronRight } from "lucide-react";
-
-const credentials = [
-  {
-    icon: Clock,
-    label: "5+ Years Experience",
-    description: "Caring for pets and homes",
-  },
-  {
-    icon: Shield,
-    label: "Fully Insured",
-    description: "Complete liability coverage",
-  },
-  {
-    icon: BadgeCheck,
-    label: "Background Checked",
-    description: "Verified and trusted",
-  },
-  {
-    icon: Heart,
-    label: "Pet First Aid Certified",
-    description: "Emergency preparedness",
-  },
-];
 
 const aboutImages = [
   "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80",
@@ -35,7 +13,32 @@ const aboutImages = [
 ];
 
 export function AboutSection() {
+  const t = useTranslations("about");
+  const tCommon = useTranslations("common");
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const credentials = [
+    {
+      icon: Clock,
+      label: t("credentials.experience"),
+      description: t("credentials.experienceDesc"),
+    },
+    {
+      icon: Shield,
+      label: t("credentials.insured"),
+      description: t("credentials.insuredDesc"),
+    },
+    {
+      icon: BadgeCheck,
+      label: t("credentials.background"),
+      description: t("credentials.backgroundDesc"),
+    },
+    {
+      icon: Heart,
+      label: t("credentials.firstAid"),
+      description: t("credentials.firstAidDesc"),
+    },
+  ];
 
   const handlePrev = () => {
     setActiveIndex((prev) => (prev === 0 ? aboutImages.length - 1 : prev - 1));
@@ -75,7 +78,7 @@ export function AboutSection() {
                 type="button"
                 onClick={handlePrev}
                 className="absolute left-3 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/80 text-foreground shadow-md hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label="Previous photo"
+                aria-label={t("carousel.previous")}
               >
                 <ChevronLeft className="h-5 w-5" />
               </button>
@@ -83,7 +86,7 @@ export function AboutSection() {
                 type="button"
                 onClick={handleNext}
                 className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/80 text-foreground shadow-md hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                aria-label="Next photo"
+                aria-label={t("carousel.next")}
               >
                 <ChevronRight className="h-5 w-5" />
               </button>
@@ -100,7 +103,7 @@ export function AboutSection() {
                         ? "bg-primary"
                         : "bg-background/70 hover:bg-primary/40"
                     }`}
-                    aria-label={`Show photo ${index + 1}`}
+                    aria-label={t("carousel.showPhoto", { number: index + 1 })}
                     aria-pressed={index === activeIndex}
                   />
                 ))}
@@ -116,30 +119,19 @@ export function AboutSection() {
               id="about-heading"
               className="text-3xl sm:text-4xl font-bold text-foreground mb-6"
             >
-              Meet Your House &amp; Pet Sitter
+              {t("title")}
             </h2>
 
             {/* Personal Story */}
             <div className="space-y-4 text-muted-foreground mb-8">
               <p className="text-lg leading-relaxed">
-                Hi, I&apos;m here to give you peace of mind while you&apos;re away. With over
-                5 years of experience caring for pets and homes across{" "}
-                <strong className="text-foreground">Gran Canaria</strong>, I understand
-                that your pets are family and your home is your sanctuary.
+                {t("paragraph1")}
               </p>
               <p className="text-lg leading-relaxed">
-                My journey into pet and house sitting began with a deep love for
-                animals and a genuine desire to help pet owners travel without worry.
-                Whether it&apos;s daily walks, medication administration, or simply
-                providing companionship, I treat every pet as if they were my own.
+                {t("paragraph2")}
               </p>
               <p className="text-lg leading-relaxed">
-                Based in Gran Canaria, I serve all areas including{" "}
-                <strong className="text-foreground">Las Palmas</strong>,{" "}
-                <strong className="text-foreground">Maspalomas</strong>,{" "}
-                <strong className="text-foreground">Playa del Inglés</strong>, and
-                surrounding communities. I&apos;m familiar with the local vets, pet-friendly
-                parks, and everything your pet might need.
+                {t("paragraph3")}
               </p>
             </div>
 
@@ -169,10 +161,10 @@ export function AboutSection() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
-                <Link href="#contact">Get in Touch</Link>
+                <Link href="#contact">{tCommon("getInTouch")}</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="#services">View My Services</Link>
+                <Link href="#services">{tCommon("viewMyServices")}</Link>
               </Button>
             </div>
           </div>
