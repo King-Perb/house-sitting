@@ -140,7 +140,7 @@ Output: Complete testimonials section with 3-5 testimonial cards displaying clie
   </files>
   <action>
     Create the Testimonials section component:
-    - Section heading: "What Our Clients Say" or similar
+    - Section heading: "What My Clients Say" or similar
     - Social proof indicator: "Trusted by X+ families in Gran Canaria"
     - Grid layout for testimonial cards (responsive: 1 col mobile, 2 col tablet, 3 col desktop)
     - Import and render TestimonialCard for each testimonial

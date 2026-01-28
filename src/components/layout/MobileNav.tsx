@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -43,19 +42,19 @@ export function MobileNav({ navLinks }: MobileNavProps) {
         </SheetHeader>
         <nav className="flex flex-col gap-4 mt-8" aria-label="Mobile navigation">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
               onClick={handleLinkClick}
               className="text-lg font-medium text-muted-foreground transition-colors hover:text-foreground py-2"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <Button asChild className="mt-4 w-full">
-            <Link href="#booking" onClick={handleLinkClick}>
+            <a href="#booking" onClick={handleLinkClick}>
               Book Now
-            </Link>
+            </a>
           </Button>
         </nav>
       </SheetContent>

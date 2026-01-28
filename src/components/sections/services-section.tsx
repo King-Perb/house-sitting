@@ -12,9 +12,9 @@ function ServiceCard({ service }: { service: ServiceItem }) {
   const Icon = service.icon;
 
   return (
-    <Card className="h-full">
+    <Card className="h-full border border-primary/10 bg-background/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow">
       <CardHeader>
-        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
           <Icon className="h-6 w-6 text-primary" />
         </div>
         <CardTitle className="text-xl">{service.title}</CardTitle>
@@ -23,10 +23,15 @@ function ServiceCard({ service }: { service: ServiceItem }) {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <h4 className="text-sm font-semibold mb-3">What&apos;s Included:</h4>
+        <h4 className="text-sm font-semibold mb-3 text-foreground">
+          What&apos;s Included:
+        </h4>
         <ul className="space-y-2">
           {service.includedItems.map((item) => (
-            <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+            <li
+              key={item}
+              className="flex items-start gap-2 text-sm text-muted-foreground"
+            >
               <Check className="h-4 w-4 text-primary shrink-0 mt-0.5" />
               <span>{item}</span>
             </li>
@@ -41,7 +46,7 @@ export function ServicesSection() {
   return (
     <section
       id="services"
-      className="py-16 md:py-24 bg-muted/50"
+      className="py-16 md:py-24 bg-gradient-to-b from-background via-background to-primary/5 scroll-mt-24"
       aria-labelledby="services-heading"
     >
       <div className="container mx-auto px-4">
@@ -54,8 +59,8 @@ export function ServicesSection() {
             Services Tailored to Your Needs
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Whether you need pet care, house sitting, or both, I offer flexible 
-            services to give you complete peace of mind while you&apos;re away from 
+            Whether you need pet care, house sitting, or both, I offer flexible
+            services to give you complete peace of mind while you&apos;re away from
             your Gran Canaria home.
           </p>
         </div>
@@ -68,7 +73,7 @@ export function ServicesSection() {
         </div>
 
         {/* Service Area Coverage */}
-        <div className="bg-background rounded-xl p-8 border">
+        <div className="bg-background/90 rounded-2xl p-8 border border-primary/10 shadow-sm">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
               <MapPin className="h-5 w-5 text-primary" />
@@ -89,7 +94,7 @@ export function ServicesSection() {
             ))}
           </div>
           <p className="text-sm text-muted-foreground mt-4">
-            Don&apos;t see your area listed? Contact me to discuss coverage in 
+            Don&apos;t see your area listed? Contact me to discuss coverage in
             other parts of Gran Canaria.
           </p>
         </div>

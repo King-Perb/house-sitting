@@ -52,7 +52,13 @@ const importantInfo = [
   },
 ];
 
-function StepCard({ step, isLast }: { step: (typeof steps)[0]; isLast: boolean }) {
+function StepCard({
+  step,
+  isLast,
+}: {
+  readonly step: (typeof steps)[0];
+  readonly isLast: boolean;
+}) {
   const Icon = step.icon;
 
   return (
@@ -62,7 +68,7 @@ function StepCard({ step, isLast }: { step: (typeof steps)[0]; isLast: boolean }
         {step.number}
       </div>
 
-      <Card className="h-full w-full pt-6">
+      <Card className="h-full w-full pt-6 border border-primary/10 bg-background/90 shadow-sm">
         <CardHeader className="text-center pb-2">
           <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
             <Icon className="h-7 w-7 text-primary" />
@@ -115,7 +121,7 @@ export function HowItWorksSection() {
             How It Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Booking your house and pet sitter is simple. Just three easy steps 
+            Booking your house and pet sitter is simple. Just three easy steps
             and you&apos;ll have peace of mind while you&apos;re away.
           </p>
         </div>
@@ -128,7 +134,7 @@ export function HowItWorksSection() {
         </div>
 
         {/* Important Information */}
-        <div className="bg-background rounded-xl p-8 border">
+        <div className="bg-background/95 rounded-xl p-8 border border-primary/10 shadow-sm">
           <h3 className="text-xl font-semibold mb-6 text-center">
             Good to Know
           </h3>
@@ -158,7 +164,7 @@ export function HowItWorksSection() {
             <strong>Payment:</strong> Secure online payment via Stripe. All major credit and debit cards accepted.
           </p>
           <p className="mt-2">
-            <strong>Cancellation:</strong> Free cancellation up to 48 hours before your booking. 
+            <strong>Cancellation:</strong> Free cancellation up to 48 hours before your booking.
             See full terms during checkout.
           </p>
         </div>

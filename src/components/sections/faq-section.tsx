@@ -12,7 +12,7 @@ export function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-16 md:py-24"
+      className="py-16 md:py-24 scroll-mt-24"
       aria-labelledby="faq-heading"
     >
       {/* FAQ Schema Markup */}
@@ -31,7 +31,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions? Find answers to the most common questions about 
+            Have questions? Find answers to the most common questions about
             house and pet sitting services in Gran Canaria.
           </p>
         </div>

@@ -170,6 +170,12 @@ This is a personal service website for a house and pet sitter in Gran Canaria. T
 3. **Phase 19: Pre-Launch** - Final testing and checklist
 4. **Phase 20: Launch** - Deployment and go-live
 
+### Ad-hoc Todos (GSD-style)
+
+- [x] Design and implement Gran Canaria–inspired color palette in `globals.css` and enhance hero section with high-quality mock imagery, ensuring accessibility and readability.
+- [ ] Extend the new color palette and mock imagery to other key sections (about, services, testimonials) and refine any remaining monochrome areas.
+- [ ] Implement smooth scroll behavior for navbar links and CTA buttons so clicking them scrolls to the corresponding page section instead of jumping.
+
 ### Pre-Launch Checklist
 - [ ] Replace placeholder pricing with real rates
 - [ ] Update contact email and phone

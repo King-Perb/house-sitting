@@ -20,7 +20,7 @@ export function BookingSection() {
   return (
     <section
       id="booking"
-      className="py-16 md:py-24"
+      className="py-16 md:py-24 scroll-mt-24"
       aria-labelledby="booking-heading"
     >
       <div className="container mx-auto px-4">
@@ -37,7 +37,7 @@ export function BookingSection() {
             Book Your Service
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Select your dates and complete your booking in minutes. 
+            Select your dates and complete your booking in minutes.
             You&apos;ll receive instant confirmation and can pay securely online.
           </p>
         </div>

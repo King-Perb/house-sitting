@@ -82,7 +82,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-16 md:py-24 bg-muted/50"
+      className="py-16 md:py-24 bg-muted/50 scroll-mt-24"
       aria-labelledby="contact-heading"
     >
       <div className="container mx-auto px-4">
@@ -95,7 +95,7 @@ export function ContactSection() {
             Get in Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions before booking? Send me a message and I&apos;ll get back 
+            Have questions before booking? Send me a message and I&apos;ll get back
             to you as soon as possible. For immediate bookings, use the{" "}
             <a href="#booking" className="text-primary hover:underline">
               booking calendar
@@ -104,7 +104,7 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto rounded-2xl border border-primary/10 bg-background/95 shadow-sm p-6 sm:p-8">
           {/* Contact Info */}
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -255,7 +255,7 @@ export function ContactSection() {
 
           {/* Privacy Note */}
           <p className="mt-6 text-xs text-muted-foreground text-center">
-            Your information is safe with me. I&apos;ll only use it to respond to 
+            Your information is safe with me. I&apos;ll only use it to respond to
             your inquiry and will never share it with third parties.
           </p>
         </div>

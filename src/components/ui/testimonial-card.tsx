@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Quote, MapPin, PawPrint, Home, Heart } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { StarRating } from "@/components/ui/star-rating";
@@ -27,13 +28,33 @@ const serviceTypeConfig = {
   },
 };
 
-function ClientAvatar({ name }: { name: string }) {
+function ClientAvatar({
+  name,
+  imageUrl,
+}: {
+  name: string;
+  imageUrl?: string;
+}) {
   const initials = name
     .split(" ")
     .map((n) => n[0])
     .join("")
     .toUpperCase()
     .slice(0, 2);
+
+  if (imageUrl) {
+    return (
+      <div className="w-12 h-12 rounded-full overflow-hidden bg-primary/10">
+        <Image
+          src={imageUrl}
+          alt={`${name} testimonial photo`}
+          width={48}
+          height={48}
+          className="h-full w-full object-cover"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -47,7 +68,12 @@ export function TestimonialCard({ testimonial, className }: TestimonialCardProps
   const ServiceIcon = serviceConfig.icon;
 
   return (
-    <Card className={cn("h-full flex flex-col", className)}>
+    <Card
+      className={cn(
+        "h-full flex flex-col border border-primary/10 bg-background/95 shadow-sm",
+        className
+      )}
+    >
       <CardHeader className="pb-4">
         {/* Quote Icon */}
         <div className="mb-2">
@@ -63,7 +89,10 @@ export function TestimonialCard({ testimonial, className }: TestimonialCardProps
       <CardContent className="mt-auto pt-0">
         {/* Client Info */}
         <div className="flex items-center gap-3 mb-4">
-          <ClientAvatar name={testimonial.clientName} />
+          <ClientAvatar
+            name={testimonial.clientName}
+            imageUrl={testimonial.clientImage}
+          />
           <div>
             <p className="font-semibold">{testimonial.clientName}</p>
             <StarRating rating={testimonial.rating} size="sm" />

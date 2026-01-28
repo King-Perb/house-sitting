@@ -21,6 +21,8 @@ export const testimonials: Testimonial[] = [
     petType: "2 dogs",
     location: "Las Palmas",
     date: "December 2025",
+    clientImage:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80",
   },
   {
     id: "2",
@@ -31,6 +33,8 @@ export const testimonials: Testimonial[] = [
     serviceType: "house-care",
     location: "Maspalomas",
     date: "November 2025",
+    clientImage:
+      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=300&q=80",
   },
   {
     id: "3",
@@ -42,6 +46,8 @@ export const testimonials: Testimonial[] = [
     petType: "Cat",
     location: "Playa del Inglés",
     date: "October 2025",
+    clientImage:
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80",
   },
   {
     id: "4",
@@ -53,6 +59,8 @@ export const testimonials: Testimonial[] = [
     petType: "Dog",
     location: "Telde",
     date: "September 2025",
+    clientImage:
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80",
   },
   {
     id: "5",
@@ -64,5 +72,7 @@ export const testimonials: Testimonial[] = [
     petType: "3 cats",
     location: "Las Palmas",
     date: "January 2026",
+    clientImage:
+      "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=300&q=80",
   },
 ];

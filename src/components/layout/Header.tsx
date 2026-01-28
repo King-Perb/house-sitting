@@ -31,16 +31,16 @@ export function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:gap-6">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <Button asChild>
-            <Link href="#booking">Book Now</Link>
+            <a href="#booking">Book Now</a>
           </Button>
         </div>
 

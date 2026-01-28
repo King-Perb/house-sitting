@@ -64,7 +64,7 @@ function PricingCard({
 }) {
   return (
     <Card
-      className={`h-full relative ${
+      className={`h-full relative border border-primary/10 bg-background/95 shadow-sm ${
         plan.highlighted
           ? "border-primary shadow-lg scale-[1.02]"
           : ""
@@ -95,7 +95,7 @@ export function PricingSection() {
   return (
     <section
       id="pricing"
-      className="py-16 md:py-24"
+      className="py-16 md:py-24 scroll-mt-24"
       aria-labelledby="pricing-heading"
     >
       <div className="container mx-auto px-4">
@@ -108,7 +108,7 @@ export function PricingSection() {
             Transparent Pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            No hidden fees, no surprises. Just honest, straightforward pricing 
+            No hidden fees, no surprises. Just honest, straightforward pricing
             for quality house and pet sitting services in Gran Canaria.
           </p>
         </div>
@@ -161,8 +161,8 @@ export function PricingSection() {
         {/* Additional Services Note */}
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            <strong>Need something extra?</strong> Additional services like 
-            extended overnight stays, multiple pets, or special requirements 
+            <strong>Need something extra?</strong> Additional services like
+            extended overnight stays, multiple pets, or special requirements
             can be accommodated. Contact me for a custom quote.
           </p>
         </div>

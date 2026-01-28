@@ -1,6 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Shield, BadgeCheck, Clock, Heart } from "lucide-react";
+import { Shield, BadgeCheck, Clock, Heart, ChevronLeft, ChevronRight } from "lucide-react";
 
 const credentials = [
   {
@@ -25,30 +28,86 @@ const credentials = [
   },
 ];
 
+const aboutImages = [
+  "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1516371535707-512a1e83bb9a?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1525253086316-d0c936c814f8?auto=format&fit=crop&w=900&q=80",
+];
+
 export function AboutSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePrev = () => {
+    setActiveIndex((prev) => (prev === 0 ? aboutImages.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prev) => (prev === aboutImages.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <section
       id="about"
-      className="py-16 md:py-24 bg-background"
+      className="py-16 md:py-24 bg-background scroll-mt-24"
       aria-labelledby="about-heading"
     >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Photo Column */}
           <div className="relative">
-            {/* Placeholder photo - using gradient background until real photo is available */}
-            <div className="aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 via-primary/10 to-muted shadow-lg">
-              <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Heart className="w-12 h-12 text-primary" />
-                  </div>
-                  <p className="text-sm">Professional photo coming soon</p>
-                </div>
+            {/* Photo carousel */}
+            <div className="aspect-[4/5] w-full max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden shadow-xl border border-primary/20 bg-background relative">
+              <div className="w-full h-full relative">
+                {aboutImages.map((url, index) => (
+                  <div
+                    key={url}
+                    className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-out ${
+                      index === activeIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                    style={{ backgroundImage: `url('${url}')` }}
+                    aria-hidden="true"
+                  />
+                ))}
+              </div>
+
+              {/* Carousel controls */}
+              <button
+                type="button"
+                onClick={handlePrev}
+                className="absolute left-3 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/80 text-foreground shadow-md hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                aria-label="Previous photo"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                onClick={handleNext}
+                className="absolute right-3 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/80 text-foreground shadow-md hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                aria-label="Next photo"
+              >
+                <ChevronRight className="h-5 w-5" />
+              </button>
+
+              {/* Dots */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5">
+                {aboutImages.map((url, index) => (
+                  <button
+                    key={url}
+                    type="button"
+                    onClick={() => setActiveIndex(index)}
+                    className={`h-2.5 w-2.5 rounded-full border border-primary/40 transition-colors ${
+                      index === activeIndex
+                        ? "bg-primary"
+                        : "bg-background/70 hover:bg-primary/40"
+                    }`}
+                    aria-label={`Show photo ${index + 1}`}
+                    aria-pressed={index === activeIndex}
+                  />
+                ))}
               </div>
             </div>
             {/* Decorative element */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/5 rounded-full -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-accent/20 rounded-full -z-10" />
           </div>
 
           {/* Content Column */}
@@ -68,13 +127,13 @@ export function AboutSection() {
                 <strong className="text-foreground">Gran Canaria</strong>, I understand
                 that your pets are family and your home is your sanctuary.
               </p>
-              <p className="leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 My journey into pet and house sitting began with a deep love for
                 animals and a genuine desire to help pet owners travel without worry.
                 Whether it&apos;s daily walks, medication administration, or simply
                 providing companionship, I treat every pet as if they were my own.
               </p>
-              <p className="leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 Based in Gran Canaria, I serve all areas including{" "}
                 <strong className="text-foreground">Las Palmas</strong>,{" "}
                 <strong className="text-foreground">Maspalomas</strong>,{" "}
