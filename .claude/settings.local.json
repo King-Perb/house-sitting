@@ -9,7 +9,10 @@
       "Bash(ralphy --help:*)",
       "Bash(ralphy --init:*)",
       "Bash(ralphy:*)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(ls:*)",
+      "Bash(npm run lint:*)",
+      "Bash(npx eslint .)"
     ]
   }
 }
